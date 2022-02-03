@@ -1,0 +1,947 @@
+@font-face {
+  font-family: 'Muller';
+  src: url(/fonts/MullerBold.woff2) format('woff2'), url(/fonts/MullerBold.woff) format('woff');
+  font-weight: bold;
+  font-style: normal;
+} 
+
+@font-face {
+  font-family: 'Muller';
+  src: url(/fonts/MullerLight.woff2) format('woff2'), url(/fonts/MullerLight.woff) format('woff');
+  font-weight: 300;
+  font-style: normal;
+} 
+
+@font-face {
+  font-family: 'Muller';
+  src: url(/fonts/MullerMedium.woff2) format('woff2'), url(/fonts/MullerMedium.woff) format('woff');
+  font-weight: 500;
+  font-style: normal;
+} 
+
+@font-face {
+  font-family: 'Muller';
+  src: url(/fonts/MullerRegular.woff2) format('woff2'), url(/fonts/MullerRegular.woff) format('woff');
+  font-weight: normal;
+  font-style: normal;
+} 
+
+:root {
+  --Background: #f1f1f1;
+  --BoxShadow: #bebebe;
+  --SeparationLines: #ccc;
+  --Color0: #fff;
+  --Color1: #ffcc66;
+  --Color2: #cc9933;
+  --Color3: #7d5607;
+  --Color4: #999;
+  --Color5: #666;
+  --Color6: #333;
+
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+html {
+  font-family: 'Muller';
+  font-weight: 300;
+}
+
+body {
+  background-color: var(--Background);
+}
+
+.section {
+  margin-bottom: 70px;
+}
+
+.container {
+  max-width: 1200px;
+  /* margin-left: auto;
+  margin-right: auto;
+  padding-left: 16px;
+  padding-right: 16px; */
+}
+
+.h2-heading {
+  margin-top: 0;
+  margin-bottom: 25px;
+  margin-left: 45px;
+  font-family: 'Muller';
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 1;
+  color: var(--Color6);
+}
+
+.link-sign0, .link-sign, .link-sign2 {
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+
+.link-sign0 {
+  padding-right: 15px;
+  background-image: url(/img/right-arrow-link0.png);
+}
+
+.link-sign {
+  padding-right: 20px;
+  background-image: url(/img/right-arrow-link.png);
+}
+
+.link-sign2 {
+  padding-right: 22px;
+  background-image: url(/img/right-arrow-link2.png);
+}
+
+.index-input, .index-btn {
+  height: 70px;
+  border-radius: 13px;
+  cursor: pointer;
+}
+
+.index-input {
+  width: 100%;
+  margin: 23px 0 0 0;
+  padding: 0 22px;
+  background-color: var(--Color0);
+  border: 0;
+  border: none;
+}
+
+.index-btn {
+  display: flex;
+  margin-top: 23px;
+  align-items: center;
+  padding: 0 30px;
+  border: 1px solid var(--Color2);
+  color: var(--Color2);
+  /* transition: color, background-color 0.1s linear; */
+}
+
+.index-btn:hover {
+  color: var(--Color0);
+  background-color: var(--Color2);
+}
+
+.index-fieldset, .index-input {
+  border: 0 none;
+}
+
+.index-btn:focus, .index-input:focus {
+  outline: none;
+}
+
+.index-btn-transform {
+  transform-origin: top left;
+  transition: transform 0.1s linear;
+}
+
+.index-btn-transform:hover {
+  transform: rotate(7deg);
+}
+
+/*//////////////////////////////////////////
+//                                        //
+//                 Header                 //
+//                                        //
+//////////////////////////////////////////*/
+
+.header {
+  margin-bottom: 70px;
+}
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-top-left {
+  height: 115px;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  margin-right: 20px;
+}
+
+.phoneNumber {
+  font-family: 'Muller';
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 1;
+  color: var(--Color5);
+  transition: color 0.1s linear;
+}
+
+.phoneNumber:hover {
+  color: var(--Color2);
+}
+
+.personalAccount-link {
+  padding: 7px 17px 5px 17px;
+  font-family: 'Muller';
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1;
+  color: var(--Color2);
+  background-image: url(/img/arrow-icon.png);
+  background-repeat: no-repeat;
+  background-position: center left;
+  border-radius: 10px;
+  transition: color, background-color 0.1s linear;
+}
+
+.personalAccount-link:hover {
+  color: var(--Color0);
+  background-color: var(--Color2);
+}
+
+.header-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  padding: 0 21px;
+  background-color: var(--Color0);
+  border-radius: 13px;
+}
+
+.header-list {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;  
+}
+
+.header-list-item-link {
+  font-family: 'Muller';
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 32px;
+  color: var(--Color6);
+  transition: color 0.1s linear;
+}
+
+.header-list-item-link:hover {
+  color: var(--Color2);
+}
+
+.search {
+  display: flex;
+  align-items: center;
+}
+
+.search-input {
+  width: 355px;
+  height: 48px;
+  padding: 0 22px;
+  margin: 0;
+  border: 0;
+  border: none;
+  background-color: var(--Background);
+  border-radius: 15px;
+}
+
+.search-bnt {
+  display: flex;
+  align-items: center;
+  transform: translateX(-42px);
+}
+
+.search-input:focus {
+  outline: none;
+  box-shadow: 0 0 2px 1px var(--BoxShadow);
+}
+
+/*//////////////////////////////////////////
+//                                        //
+//                Booking                 //
+//                                        //
+//////////////////////////////////////////*/
+
+.section-booking {
+  min-height: 600px;
+}
+
+/*Quick Booking*/
+
+.section-booking-form, .section-booking-specialOffer {
+  display: flex;
+  flex-direction: column;
+}
+
+.section-booking-form {
+  flex-basis: 45%;
+}
+
+.section-booking-legend {
+  margin-bottom: 2px;
+}
+
+.quickBooking-underList-available {
+  margin-left: 30px;
+}
+
+.quickBooking-underList-available-number {
+  color: var(--Color2);
+}
+
+.section-booking-btn {
+  display: inline-block;
+}
+
+/*Special offer*/
+
+.section-booking-specialOffer {
+  flex-basis: 50%;
+}
+
+.specialOffer-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 100%;
+  padding: 40px;
+  background-image: url(/img/room.png);
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  background-position: center;
+  border-radius: 13px;
+}
+
+.specialOffer-card-h1 {
+  width: 340px;
+}
+
+.specialOffer-card-h1-inner {
+  font-family: 'Muller';
+  font-weight: normal;
+  font-size: 66px;
+  line-height: 58px;
+  color: var(--Color0);
+}
+
+.specialOffer-card-bottom {
+  margin-top: 45px;
+}
+
+.specialOffer-card-price {
+  margin-right: 40px;
+  font-family: 'Muller';
+  font-weight: normal;
+  font-size: 35px;
+  line-height: 1;
+  color: var(--Color0);
+  opacity: 0.5;
+}
+
+.specialOffer-card-details-link {
+  padding: 7px 15px 5px;
+  font-family: 'Muller';
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1;
+  border-radius: 10px;
+  color: var(--Color1);
+  transition: color, background-color 0.1s linear;
+}
+
+.specialOffer-card-details-link:hover {
+  color: var(--Color3);
+  background-color: var(--Color1);
+}
+
+/*//////////////////////////////////////////
+//                                        //
+//                About Us                //
+//                                        //
+//////////////////////////////////////////*/
+
+.section-aboutUs-text {
+  margin-left: 45px;
+  font-family: 'Muller';
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 32px;
+  color: var(--Color5);
+}
+
+/*//////////////////////////////////////////
+//                                        //
+//                Services                //
+//                                        //
+//////////////////////////////////////////*/
+
+.section-services {
+  margin-bottom: 46px;
+}
+
+.section-services-list > * {
+  margin-bottom: 24px;
+}
+
+.section-services-item {
+  display: flex;
+  flex-direction: column;
+  margin-right: 24px;
+  width: 572px;
+  min-height: 326px;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 100% auto;
+  border-radius: 15px;
+}
+
+/* 
+.section-services-item:nth-child(2n) {
+  margin-right: 0;
+}
+
+.section-services-item:not(:nth-child(-n+2)) {
+  margin-top: 24px;
+} */
+
+.section-services-item-empty {
+  min-height: 165px;
+  width: 100%;
+}
+
+.section-services-item-info {
+  padding: 36px 45px 40px 45px;
+  height: 100%;
+  line-height: 35px;
+  background-color: var(--Color0);
+  border-radius: 0 0 15px 15px;
+}
+
+.section-services-item-info-link {
+  padding: 8px 20px 7px;
+  font-family: 'Muller';
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 1;
+  color: var(--Color2);
+  border-radius: 13px;
+  transition: color, background-color 0.1s linear;
+}
+
+.section-services-item-info-link:hover {
+  color: var(--Color0);
+  background-color: var(--Color2);
+}
+
+.services-item-exclusiveService {
+  background-image: url(/img/champagne.png);
+}
+
+.services-item-rent {
+  background-image: url(/img/table.png);
+}
+
+.services-item-sauna {
+  background-image: url(/img/pool.png);
+}
+
+.services-item-parking {
+  background-image: url(/img/cars.png);
+}
+
+/*//////////////////////////////////////////
+//                                        //
+//              Advantages                //
+//                                        //
+//////////////////////////////////////////*/
+
+.section-advantages {
+  margin-bottom: 38px;
+}
+
+.section-advantages-list > * {
+  margin-bottom: 32px;
+}
+
+.section-advantages-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 45px 40px;
+  margin-right: 22px;
+  min-height: 275px;
+  width: 275px;
+  flex-shrink: 0;
+  background-color: var(--Color0);
+  border-radius: 15px;
+}
+
+.section-advantages-item:nth-child(4n) {
+ margin-right: 0;
+}
+
+.section-advantages-item:not(:nth-child(-n+4)) {
+  margin-top: 25px;
+}
+
+.section-advantages-item-icon {
+  display: block;
+  background-repeat: no-repeat;
+  height: 65px;
+  background-position: top left;
+}
+
+.advantages-item-icon-bath {
+  background-image: url(/img/bathtub.svg);
+}
+
+.advantages-item-icon-towel {
+  background-image: url(/img/hanger.svg);
+}
+
+.advantages-item-icon-radiator {
+  background-image: url(/img/heating.svg);
+}
+
+.advantages-item-icon-key {
+  background-image: url(/img/hotel-key.svg);
+}
+
+.advantages-item-icon-car {
+  background-image: url(/img/parking.svg);
+}
+
+.advantages-item-icon-bell {
+  background-image: url(/img/reception.svg);
+}
+
+.advantages-item-icon-safe {
+  background-image: url(/img/security-box.svg);
+}
+
+.advantages-item-icon-pool {
+  background-image: url(/img/swimming-pool.svg);
+}
+
+.section-advantages-item-text {
+  margin: 12px 0 0 0;
+  line-height: 30px;
+}
+
+/*//////////////////////////////////////////
+//                                        //
+//               Placement                //
+//                                        //
+//////////////////////////////////////////*/
+
+.section-placement {
+  margin-bottom: 38px;
+}
+
+.section-placement-list > * {
+  margin-bottom: 32px;
+}
+
+.section-placement-item, .section-placement-card {
+  flex-shrink: 0;
+  width: 373px;
+  height: 100%;
+}
+
+.section-placement-item {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin-right: 24px;
+  background-color: var(--Color0);
+  border-radius: 15px;
+}
+
+/* .section-placement-item:nth-child(3n) {
+  margin-right: 0;
+}
+
+.section-placement-item:not(:nth-child(-n+3)), .section-placement-card {
+  margin-top: 24px;
+} */
+
+.section-placement-item-content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.section-placement-item-content-info {
+  padding: 35px 45px 0;
+  height: 199%;
+}
+
+.section-placement-item-content-info-top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.section-placement-item-content-info-top-price {
+  font-family: 'Muller';
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1;
+  color: var(--Color4);
+}
+
+.price-size {
+  font-family: 'Muller';
+  font-weight: bold;
+  font-size: 22px;
+  color: var(--Color6);
+}
+
+.price-color {
+  color: var(--Color6);
+}
+
+.section-placement-item-content-info-name, .section-placement-item-content-info-address {
+  font-family: 'Muller';
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1;
+}
+
+.section-placement-item-content-info-name {
+  color: var(--Color6);
+
+}
+
+.section-placement-item-content-info-address {
+  color: var(--Color4);
+}
+
+.section-placement-item-content-btn {
+  display: inline-block;
+  padding: 12px 20px 11px;
+  margin: 22px 45px 45px;
+  align-self: start;
+  font-family: 'Muller';
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1;
+  border: 1px solid var(--Color2);
+  border-radius: 15px;
+  color: var(--Color2);
+  /* transition: color, background-color 0.1s linear; */
+}
+
+.section-placement-item-content-btn:hover {
+  color: var(--Color0);
+  background-color: var(--Color2);
+}
+
+.section-placement-card {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 50px;
+  background-image: url(/img/card.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto 100%;
+  border-radius: 15px;
+}
+
+.section-placement-card-link {
+  position: relative;
+  padding: 5px 22px 5px;
+  font-family: 'Muller';
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 1;
+  color: var(--Color0);
+  border-radius: 10px;
+  transition: color, background-color 0.1s linear;
+}
+
+.section-placement-card-link:hover {
+  color: var(--Color3);
+  background-color: var(--Color0);
+}
+
+.section-placement-card-link::before {
+  content: '';
+  position: absolute;
+  width: 373px;
+  height: 463px;
+  right: -27px;
+  bottom: -51px;
+}
+
+/*//////////////////////////////////////////
+//                                        //
+//          Info/Contacts section         //
+//                                        //
+//////////////////////////////////////////*/
+
+/*Contacts*/
+
+.section-info-contacts-block {
+  width: 475px;
+  height: auto;
+  padding: 20px 45px;
+  background-color: var(--Color0);
+  border-radius: 15px;
+}
+
+.contacts-block--padding {
+  padding: 28px 0;
+  border-bottom: 1px solid var(--SeparationLines);
+}
+
+.contacts-block--heading {
+  display: inline-block;
+  width: 50%;
+  height: 100%;
+  font-family: 'Muller';
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 1;
+  color: var(--Color5);
+}
+
+.contacts-block-address, .contacts-block-phoneNumbers, .contacts-block-email, .contacts-block-graphic {
+  display: flex;
+}
+
+.contacts-block-address-text-content {
+  display: inline-block;
+  width: 100%;
+}
+
+.contacts-block-phoneNumbers-numbers {
+  width: 100%;
+}
+
+.contacts-block-phoneNumbers-numbers-inner {
+  font-family: 'Muller';
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--Color2);
+  transition: color 0.1s linear;
+}
+
+.contacts-block-phoneNumbers-numbers-inner:hover {
+  color: var(--Color3);
+}
+
+.contacts-block-address-text, .contacts-block-phoneNumbers-numbers, .contacts-block-email-text, .contacts-block-graphic-text {
+  display: inline-block;
+}
+
+.contacts-block-email-text-item {
+  font-family: 'Muller';
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--Color4);
+}
+
+.contacts-block-email-text-item-link {
+  color: var(--Color2);
+  transition: color 0.1s linear;
+}
+
+.contacts-block-email-text-item-link:hover {
+ color: var(--Color3);
+}
+
+.contacts-block-address-text, .contacts-block-graphic-text {
+  font-family: 'Muller';
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--Color6);
+}
+
+.contacts-block-bottom {
+  padding: 28px 0;
+}
+
+.contacts-block-bottom-btn {
+  display: flex;
+  width: 215px;
+  height: 70px;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Muller';
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1;
+  color: var(--Color2);
+  border: 1px solid var(--Color2);
+  border-radius: 15px;
+  /* transition: color, background-color 0.1s linear; */
+}
+
+.contacts-block-bottom-btn:hover {
+  color: var(--Color0);
+  background-color: var(--Color2);
+}
+
+/*Contact Us*/
+
+.section-info-contactUs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+}
+
+.section-info-contactUs-form {
+  min-width: 340px;
+}
+
+#section-info-contactUs-textarea {
+  padding-top: 15px;
+  height: 110px;
+  resize: none;
+  width: 100%;
+}
+
+.section-info-contactUs-btn  {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  transform: translateY(-7px);
+}
+
+/*//////////////////////////////////////////
+//                                        //
+//                  Footer                //
+//                                        //
+//////////////////////////////////////////*/
+
+.footer {
+  margin-top: 25px;
+  margin-bottom: 50px;
+}
+
+.footer-inner {
+  padding: 50px;
+  background-color: var(--Color6);
+  border-radius: 15px;
+  color: var(--Color0);
+  background-image: url(/img/sun-transparent.png);
+  background-repeat: no-repeat;
+  background-position: 80% bottom;
+}
+
+.footer-left-text, .footer-left-link, .footer-center-text, .footer-center-link {
+  font-family: 'Muller';
+  font-weight: normal;
+  font-size: 16px;
+}
+
+.footer-left {
+  margin-right: 120px;
+  width: 310px;
+}
+
+.footer-left-text {
+  margin-bottom: 50px;
+  line-height: 32px;
+  color: var(--Color0);
+}
+
+.footer-left-link {
+  color: var(--Color2);
+  transition: color 0.1s linear;
+}
+
+.footer-left-link:hover {
+  color: var(--Color1);
+}
+
+.footer-center {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-center-text {
+  color: var(--Color0);
+}
+
+.footer-center-link {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+}
+
+.footer-center-link-inner {
+  line-height: 24px;
+  color: var(--Color2);
+  transition: color 0.1s linear;
+}
+
+.footer-center-link-inner:hover {
+  color: var(--Color1);
+}
+
+.footer-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: auto;
+  height: 100%;
+  max-height: 210px;
+}
+
+.footer-social {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100%;
+}
+
+.footer-social:hover {
+  transform: rotate(720deg);
+  transition: transform 0.5s ease-in-out;
+}
+
+.footer-right-link-tripAdviser {
+  background-image: url(/img/owl-icon.png);
+}
+
+.footer-right-link-twitter {
+  background-image: url(/img/twitter-icon.png);
+}
+
+.footer-right-link-facebook {
+  background-image: url(/img/facebook-icon.png);
+}
+
+.footer-right-link-vk {
+  background-image: url(/img/vk-icon.png);
+}
+
+.footer-right-link-google {
+  background-image: url(/img/g-icon.png);
+}

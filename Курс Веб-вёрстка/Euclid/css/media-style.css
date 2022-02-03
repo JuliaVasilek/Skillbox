@@ -1,0 +1,1060 @@
+/*//////////////////////////////////////////
+//                                        //
+//                 1919px                 //
+//                                        //
+//////////////////////////////////////////*/
+
+@media (max-width: 1919.5px) {
+
+  :root {
+    --Background: #fff;
+    --HeaderColor: #fff;
+    --BtnColor: #FF9900;
+    --HoverColor: #FF9900;
+    --ActiveColor: #E1670E;
+    --FocusColor: #FF9900;
+    --Btn2HoverColor: #666;
+    --Btn2ActiveColor: #000;
+    --TextColor: #333;
+    --BorderColor: #CACACA;
+    --FooterTextColor: #CACACA;
+    --FooterBackgroundColor: #222;
+    --FooterInputBackgroundColor: #414141;
+  }
+
+  .container {
+    width: 1440px;
+    padding: 0 20px;
+  }
+
+  /*////////////// Hero //////////////*/
+
+  .swiper-container, .section-hero__slider {
+    width: 1400px;
+  }
+
+  .section-hero__slider__content {
+    width: 80%;
+  }
+
+  /*////////////// About Us //////////////*/
+
+  .section-aboutUs__cards__info-cards {
+    margin-left: 0;
+  }
+
+  .section-aboutUs__text {
+    max-width: 100%;
+  }
+
+  /*////////////// How We Work //////////////*/
+
+  .section-HowWeWork__slider__inner {
+    background-position: 646px 2px;
+  }
+}
+
+/*//////////////////////////////////////////
+//                                        //
+//                 1439px                 //
+//                                        //
+//////////////////////////////////////////*/
+
+@media (max-width: 1439.5px){
+
+  .container {
+    width: 1200px;
+    padding: 0 50px;
+  }
+
+  /*////////////// Hero //////////////*/
+
+  .swiper-container, .section-hero__slider {
+    width: 1100px;
+  }
+
+  .section-hero__slider__content__undertext {
+    margin-bottom: 28px;
+  }
+
+  /*////////////// Header //////////////*/
+
+  .header__nav__list {
+      width: 600px;
+  }
+
+  /*////////////// How We Work //////////////*/
+
+  .section-HowWeWork__slider {
+    height: 680px;
+    background-size: auto 99%;
+    background-position: 194px center;
+  }
+
+  .section-HowWeWork__slider__inner {
+    background-position: 360px 2px;
+    background-size: 1014px;
+  }
+  
+  .section-HowWeWork__slider__content {
+    width: 600px;
+    height: 680px;
+    padding-right: 100px;
+  }
+  
+  /*////////////// Question List //////////////*/
+
+  .section-Questions__accordion .accordion__title_4:after {
+    top: 48px;
+  }
+
+  /*////////////// Footer //////////////*/
+
+  .footer__text {
+    display: none;
+  }
+
+}
+
+/*//////////////////////////////////////////
+//                                        //
+//                 1199px                 //
+//                                        //
+//////////////////////////////////////////*/
+
+@media (max-width: 1199.5px) {
+
+  .section {
+    margin-bottom: 62px;
+  }
+
+  .container {
+    width: 1024px;
+  }
+
+   /*////////////// Header //////////////*/
+
+  .header__inner {
+    height: 99px;
+  }
+
+  .header__nav, .header__nav__list {
+    width: 100%;
+  }
+
+  .header__logo, .nav-page {
+    display: none;
+  }
+
+  .nav-burger, .nav-mini-logo {
+    display: inline-block;
+  }
+
+  .nav-burger {
+    width: 30px;
+    height: 23px;
+  }
+
+  /*////////////// Hero //////////////*/
+
+  .swiper-container, .section-hero__slider {
+    width: 924px;
+  }
+
+  .section-hero__inner {
+    height: 668px;
+  }
+
+  .section-hero__inner>.swiper-pagination-bullets {
+    bottom: 80px;
+  }
+
+  .section-hero__slider {
+    margin-top: -670px;
+    padding-left: 45px;
+    padding-top: 119px;
+    background-position: center 57.5%;
+  }
+
+  .section-hero__slider__content__h1 {
+    margin-bottom: 7px;
+    font-size: 60px;
+    line-height: 73.14px;
+  }
+
+  .section-hero__slider__content__undertext {
+    margin-bottom: 109px;
+    font-size: 20px;
+    line-height: 24.38px;
+  }
+
+  .section-hero__slider__content__btn {
+    margin-left: 0;
+    padding: 27px 38.4px 24px;
+    font-size: 24px;
+    line-height: 29.26px;
+  }
+
+  .section-hero__slider__content__scroll {
+    display: flex;
+  }
+
+
+  /*////////////// About Us //////////////*/
+
+  .title-h2 {
+    margin-left: -3px;
+  }
+
+  .section-aboutUs__text {
+    margin: 23.5px 0 59px -1px;
+  }
+
+  .section-aboutUs__text__sign__img {
+    margin-left: -4px;
+    margin-right: 4px;
+  }
+
+  .section-aboutUs__cards__photo-card {
+    margin-bottom: 49px;
+    width: 924px;
+    height: 640px;
+    background-size: 104.3%;
+  }
+
+  .photo-card__content__background {
+    height: 173px;
+    width: 924px;
+  }
+
+  .photo-card__content__inner {
+    padding: 0 51px 0 43px;
+  }
+
+  .section-aboutUs__cards__info-cards {
+    margin-top: 0;
+    width: 924px;
+  }
+
+  .info-cards__card {
+    padding: 68px 115px 0 347px;
+  }
+
+  .info-cards__card:first-child {
+    margin-bottom: 41px;
+  }
+
+  .card__box {
+    background-position: 111px 76px;
+  }
+
+  .card__gear {
+    background-position: 110px 61px;
+  }
+
+  .info-cards__card__title {
+    margin-bottom: 4.5px;
+  }
+
+  /*////////////// How We Work //////////////*/
+
+  .section-HowWeWork {
+    margin-top: 0;
+  }
+
+  .section-HowWeWork__title {
+    margin-left: -6px;
+  }
+  
+  .section-HowWeWork__slider-links {
+    margin: 46.5px 0 49px 0;
+  }
+  
+  .section-HowWeWork__slider {
+    background-position: 184px 4px;
+    background-size: auto 100%;
+  }
+
+  .section-HowWeWork__slider__content {
+    width: 487px;
+    padding-right: 50px;
+    padding-bottom: 2px;
+  }
+
+  .section-HowWeWork__slider__title {
+    margin-left: 0;
+  }
+
+  .section-HowWeWork__slider__text {
+    margin-left: 0;
+  }
+
+  .section-HowWeWork__btns {
+    margin-top: -60px;
+  }
+
+  .section-HowWeWork__btns__more-btn {
+    margin-left: 0;
+    padding: 23px 38px 19px;
+  }
+
+  .section-HowWeWork__btns__contract-btn {
+    padding: 22px 37px 18px;
+  }
+
+  /*////////////// Question List //////////////*/
+
+  /* .section-Questions__list {
+    margin-left: 0;
+  }
+
+  .section-Questions__list__item:nth-child(1) {
+    padding: 40.5px 0 32.5px;
+  }
+
+  .section-Questions__list__item:nth-child(2) {
+    padding: 24px 0 26px 0;
+  }
+
+  .section-Questions__list__item:nth-child(3) {
+    padding: 30px 0 33px 0;
+  }
+
+  .section-Questions__list__item:nth-child(4) {
+    padding: 24px 0 25px 0;
+  }
+
+  .section-Questions__list__item:nth-child(5) {
+    padding: 30px 0 33px 0;
+  }
+
+  .section-Questions____summary {
+    font-size: 20px;
+    line-height: 32px;
+  }
+
+  .section-Questions____summary::before {
+    height: 125px;
+    top: -41px;
+  }
+
+  .section-Questions__list__item:nth-child(2) .section-Questions__list__item__inner .section-Questions____summary .section-Questions____summary__text {
+    padding-right: 95px;
+  }
+
+  .section-Questions__list__item:nth-child(4) .section-Questions__list__item__inner .section-Questions____summary .section-Questions____summary__text {
+    margin-right: -44px;
+  } */
+
+  .section-Questions__accordion .section-Questions__accordion__title {
+    font-size: 20px;
+  }
+
+  /*////////////// Footer //////////////*/
+
+  .footer__links__list {
+    margin-top: 9px;
+  }
+
+  .footer__links__list__item__inner {
+    font-size: 17.5px;
+  }
+
+  .footer__links__social__list {
+    margin-top: 105px;
+    margin-left: -2px;
+  }
+
+  .footer__application__form {
+    width: 560px;
+  }
+
+  .footer__application__fieldset {
+    margin-left: 22px;
+    margin-top: 15px;
+  }
+
+  .footer__application__bottom__btn {
+    min-width: 241.5px;
+  }
+
+  /* .footer-label {
+    margin-left: 16px;
+  } */
+
+  .footer__application__bottom__label {
+    padding-left: 30px;
+    font-size: 16px;
+  }
+
+#check+.footer__application__bottom__span  {
+  left: 10px;
+}
+
+  .footer__text {
+    display: none;
+  }
+}
+
+/*//////////////////////////////////////////
+//                                        //
+//                  1023px                 //
+//                                        //
+//////////////////////////////////////////*/
+
+@media (max-width: 1023.5px) {
+
+  .container {
+    width: 768px;
+    padding: 0 34px;
+    /* Ширина контейнера 700px */
+  }
+
+  /*////////////// Header //////////////*/
+
+  .header__inner {
+    height: 69px;
+  }
+
+  .nav-burger {
+    margin-left: -2px;
+    margin-top: -3px;
+  }
+  
+  .nav-mini-logo {
+    margin-left: -18px;
+    margin-bottom: -3px;
+  }
+
+  .header__nav__list__item__link-search {
+    margin-top: -6px;
+    margin-right: -1px;
+  }
+
+  /*////////////// Hero //////////////*/
+
+  .section-hero .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .swiper-container, .section-hero__slider {
+    width: 700px;
+  }
+
+  .section-hero__inner>.swiper-pagination-bullets {
+    bottom: 114px;
+  }
+
+  .section-hero__inner {
+    height: 699px;
+  }
+
+  .section-hero__slider {
+    padding-left: 21px;
+    padding-right: 21px;
+    padding-top: 88px;
+    margin-left: 40px;
+    text-align: center;
+    background-position: center 58.3%;
+  }
+
+  .section-hero__slider__content {
+    width: 100%;
+  }
+
+  /*////////////// About Us //////////////*/
+
+  .section-aboutUs__cards__photo-card, .photo-card__content__background {
+    width: 700px;
+  }
+  
+  .section-aboutUs__cards__photo-card {
+    margin-bottom: 40px;
+    height: 650px;
+    background-position: center 0px;
+    background-size: 146%;
+  }
+
+  .photo-card__content__inner {
+    margin-bottom: -146.5px;
+    padding: 0 30px 0 29px;
+  }
+
+  .photo-card__content__inner__text {
+    width: 400px;
+    line-height: 31px;
+  }
+
+  .photo-card__content__inner__btn {
+    margin-bottom: -2px;
+    padding-top: 4px;
+  }
+
+  
+  .info-cards__card {
+    padding: 37px 36px 0 177px;
+    height: 235px;
+  }
+
+  .info-cards__card:first-child {
+    margin-bottom: 40px;  
+  }
+
+  .card__box {
+    background-position: 29.5px 72px;
+    background-size: 118px;
+  }
+
+  .card__gear {
+    background-position: 30px 68px;
+    background-size: 113px;
+  }
+
+  /*////////////// How We Work //////////////*/
+
+  .section-HowWeWork__slider-links {
+    justify-content: space-between;
+    margin: 46.5px 0 50px 0;
+  }
+
+  .section-HowWeWork__slider-links__item:not(:last-child) {
+    margin-right: 44px;
+  }
+  
+  .section-HowWeWork__slider__inner {
+    padding-top: 284px;
+    background-position: 1px -98px;
+    background-size: 99%;
+  }
+
+  .section-HowWeWork__slider__content {
+    padding-right: 0px;
+    padding-top: 43px;
+    width: 100%;
+  }
+
+  .section-HowWeWork__btns {
+    margin-top: 60px;
+  }
+
+  /*////////////// Question List //////////////*/
+
+  .section-Questions__title {
+    font-size: 46px;
+    margin-left: 5px
+  }
+
+  .section-Questions__accordion .accordion__title_2:after, .section-Questions__accordion .accordion__title_3:after {
+    top: 47px;
+  }
+
+  .section-Questions____summary__text {
+    width: 510px;
+  }
+
+  .section-Questions__list__item:nth-child(2) .section-Questions__list__item__inner .section-Questions____summary .section-Questions____summary__text {
+    padding-right: 0;
+  }
+
+  .section-Questions__list__item:nth-child(1) {
+    padding: 33.5px 0 25.5px;
+  }
+
+  .section-Questions__list__item:nth-child(3) {
+    padding: 24px 0 25px 0;
+  }
+
+  .section-Questions__list__item:nth-child(5) {
+    padding: 24px 0 25px 0;
+  }
+
+  /*////////////// Footer //////////////*/
+
+  .footer__inner {
+    padding-top: 48px;
+    padding-bottom: 55px;
+  }
+
+  .footer__application__form {
+    width: 536px;
+  }
+
+  .footer__application__fieldset {
+    margin-left: -2px;
+  }
+
+  .footer__application__undersocial {
+    display: inline-block;
+    margin-top: 58px;
+  }
+
+  .footer__application__undersocial__logo__inner {
+    display: inline-block;
+  }
+
+  .footer__links {
+    display: none;
+  }
+
+  .footer__links__social__list {
+    margin-top: 11px;
+    margin-left: 0px;
+  }
+}
+
+/*//////////////////////////////////////////
+//                                        //
+//                  767px                 //
+//                                        //
+//////////////////////////////////////////*/
+
+@media (max-width: 767.5px) {
+
+  .container {
+    width: 500px;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
+  /*////////////// Hero //////////////*/
+
+  .swiper-container, .section-hero__slider {
+    width: 470px;
+  }
+
+  .section-hero__slider {
+    padding-top: 38px;
+    margin-left: 14px;
+  }
+
+  .section-hero__slider__content__h1 {
+    font-size: 40px;
+  }
+
+  /*////////////// About Us //////////////*/
+
+  .info-cards__card {
+    padding: 0;
+  }
+
+   .section-aboutUs__cards__photo-card {
+    margin-left: -1px;
+    margin-top: 10px;
+    margin-bottom: 227px;
+    width: 290px; 
+    height: 251px;
+    background-position: center 0px;
+    background-size: 104%;
+  }
+
+  .photo-card__content__inner {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .photo-card__content__inner__text {
+    width: auto;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 28px;
+    color: var(--TextColor);
+  }
+
+  .photo-card__content__background {
+    display: none;
+  }
+
+  .photo-card__content__inner__btn {
+    align-self: flex-start;
+    margin-top: 10px;
+    padding-top: 0;
+    height: 40px;
+    width: 162px;
+    font-size: 12px;
+    color: var(--BtnColor);
+    border: 2px solid var(--BtnColor);
+  }
+  
+  .section-aboutUs__cards__info-cards {
+    margin-top: -39px;
+  }
+
+  .info-cards__card {
+    height: auto;
+  }
+
+  .card__box {
+    padding-top: 63px;
+    background-position: 0 0;
+    background-size: 64px;
+    border: none;
+  }
+
+  .card__gear {
+    padding-top: 69px;
+    border: none;
+    background-position: 0 0;
+    background-size: 63px;
+  }
+  
+  .info-cards__card__title {
+    margin-bottom: 5.5px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21.94px;
+  }
+
+  .info-cards__card:first-child {
+    margin-bottom: 20px;
+  }
+
+  /*////////////// How We Work //////////////*/
+
+  .section-HowWeWork__slider__inner {
+    padding-top: 213px;
+  }
+
+  .section-HowWeWork__btns {
+    margin-top: 150px;
+  }
+
+  .section-HowWeWork__btns__more-btn {
+    padding: 14px 45px;
+    margin-right: 10px;
+  }
+
+  .section-HowWeWork__btns__contract-btn {
+    padding: 13px 30px;
+  }
+
+  /*////////////// Question List //////////////*/
+
+  .section-Questions__accordion .accordion__title_1:after, .section-Questions__accordion .accordion__title_5:after {
+    top: 47px;
+  }
+
+  .section-Questions__accordion .accordion__title_4:after {
+    top: 64px;
+  }
+
+
+  /*////////////// Footer //////////////*/
+
+  .footer__inner {
+    justify-content: center;
+  }
+
+  .footer__application__form {
+    width: 290px;
+  }
+
+  .footer__application__bottom {
+    flex-direction: column;
+  }
+
+  .footer__application__bottom__label {
+    margin-top: 20px;
+  }
+
+}
+
+/*//////////////////////////////////////////
+//                                        //
+//                  499px                 //
+//                                        //
+//////////////////////////////////////////*/
+
+@media (max-width: 499.5px) {
+
+  .container {
+    width: 320px;
+    padding: 0 15px;
+  }
+
+  .section {
+    margin-bottom: 40px;
+  }
+
+  .title-h2 {
+    font-size: 24px;
+    margin-left: -1px;
+    line-height: 29.26px;
+  }
+
+  .main-text {
+    font-size: 14px;
+    line-height: 28px;
+  }
+
+  /*////////////// Header //////////////*/
+
+  .header__inner {
+    height: 45px;
+  }
+
+  .header__nav__list {
+    flex-direction: row-reverse;
+    margin-top: 0;
+  }
+
+  .nav-mini-logo {
+    margin: 0;
+  }
+
+  .header__nav____mini-logo__img {
+    height: 31px;
+    width: auto;
+  }
+
+  .nav-burger {
+    margin-top: -4px;
+    width: 25px;
+    height: 19px;
+    background-image: url(../img/mini-Burger.svg);
+    background-size: 25px;
+  }
+
+  .nav-search {
+    display: none;
+  }
+
+  /*////////////// Hero //////////////*/
+
+  .section-hero .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .section-hero__inner {
+    height: 262px;
+    width: 290px;
+    text-align: center;
+  }
+
+  .section-hero__slider {
+    padding-top: 33px;
+    margin-top: -260px;
+    margin-left: 0;
+    width: 290px;
+    background-position: center 63.5%;
+  }
+
+  .section-hero__slider__content__h1 {
+    font-size: 20px;
+    line-height: 24.38px;
+  }
+  
+  .section-hero__slider__content__undertext {
+    margin-bottom: 35px;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 15px;
+  }
+
+  .section-hero__slider__content__btn {
+    font-size: 12px;
+    padding: 6px 29px;
+  }
+
+  .section-hero__slider__content__scroll {
+    display: none;
+  }
+
+  /*////////////// About Us //////////////*/
+
+  .section-aboutUs {
+    margin-bottom: 48px;
+  }
+
+  .section-aboutUs__text {
+    margin: 2px 0 0;
+  }
+
+  /*////////////// How We Work //////////////*/
+
+  .section-HowWeWork__slider-links {
+    margin: 34.5px 0 15.5px 0;
+    font-size: 14px;
+  }
+
+  .section-HowWeWork__slider-links__item:not(:last-child) {
+    margin-right: 0;
+  }
+
+  .section-HowWeWork__slider {
+    height: 900px;
+    background-position: -1px -17px;
+  }
+
+  .section-HowWeWork__slider__inner {
+    background-position: 2px -17px;
+    padding-top: 159px;
+  }
+
+  .section-HowWeWork__slider__content {
+    padding-top: 13px;
+  }
+
+  .section-HowWeWork__slider__title {
+    margin-bottom: 6px;
+    font-size: 18px;
+    font-weight: 500;
+  }
+  
+  .section-HowWeWork__btns {
+    margin-top: 20px;
+  }
+
+  .section-HowWeWork__btns__more-btn {
+    padding: 13.5px 44px 13px;
+    margin-right: 10px;
+    font-size: 12px;
+  }
+
+  .section-HowWeWork__btns__contract-btn {
+    padding: 11px 31px 12.5px;
+    font-size: 12px;
+    border: 1.5px solid #333;
+  }
+
+  /*////////////// Question List //////////////*/
+
+  .section-Questions {
+    margin-bottom: 43px;
+  }
+
+  /* .section-Questions__list {
+    margin-top: 14px;
+  } */
+
+  .section-Questions__accordion .section-Questions__accordion__title {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+  }
+
+  .section-Questions__accordion .title-after:after, .section-Questions__accordion__title-active:after {
+    width: 30px;
+    height: 30px;
+    background-size: 30px;
+  }
+
+  .section-Questions__accordion .accordion__title_2:after, .section-Questions__accordion .accordion__title_3:after {
+    top: 60px;
+  }
+
+  .section-Questions__accordion .accordion__title_4:after {
+    top: 74px;
+  }
+
+  .section-Questions____summary {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 500;
+  }
+
+  .section-Questions__list__item:nth-child(1) {
+    padding: 19.5px 0 21.5px;
+  }
+
+  .section-Questions__list__item:nth-child(2) {
+    padding: 21px 0 22px 0;
+  } 
+
+  .section-Questions__list__item:nth-child(3), .section-Questions__list__item:nth-child(4) {
+    padding: 21px 0 22px 0;
+  }
+
+  .section-Questions__list__item:nth-child(5) {
+    padding: 20px 0 21px 0;
+  } 
+
+  .section-Questions____summary__text {
+    width: 219px;
+  }
+
+  .section-Questions__list__item:nth-child(4) .section-Questions____summary__text{
+    width: 226px;
+  }
+
+  .section-Questions____summary::after {
+    margin-right: -10px;
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: center 11px;
+  }
+
+  /*////////////// Footer //////////////*/
+
+  .footer__inner {
+    padding-top: 12px;
+  }
+
+  .footer__application__fieldset {
+    margin-right: 0;
+  }
+
+  .footer__application__title {
+    margin-left: 1px;
+    margin-bottom: 5px;
+    font-size: 24px;
+  }
+
+  .footer__application__item {
+    padding: 14px 0 14px 20px;
+    width: 288.5px;
+    font-size: 14px;
+  }
+
+  .footer__application__item-messsage {
+    margin-bottom: 25px;
+  }
+
+  .footer__application__bottom__btn {
+    min-width: 180.5px;
+    min-height: 40px;
+    font-size: 12px;
+  }
+
+  .footer-label {
+    margin-left: 1px;
+    margin-top: 12px;
+  }
+
+  .footer__line {
+    display: inline-block;
+    margin: 23px 0;
+    width: 290px;
+    height: 1px;
+    border: none;
+    background-color: #595959;
+  }
+
+  .footer__application__undersocial {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -4px;
+  }
+
+  .footer__application__undersocial__logo__inner__img {
+    height: 42px;
+    width: auto;
+  }
+
+  .footer__links__social__list {
+    width: 134px;
+  }
+
+  .social__list__item__inner {
+    width: 35px;
+    height: 35px;
+  }
+
+  .footer__links__social__list__item__fb, .footer__links__social__list__item__vk, .footer__links__social__list__item__inst {
+    background-size: 35px;
+    background-repeat: no-repeat;
+  }
+
+}
