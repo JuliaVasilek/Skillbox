@@ -191,7 +191,7 @@ window.addEventListener('DOMContentLoaded', function () {
 
   $( function() {
     $( "#accordion" ).accordion({
-      hightStyle: "content",
+      heightStyle: "content",
       header: ".catalog_content_accordion_item-name"
     });
   });

@@ -258,14 +258,21 @@ a.to-galery-link {
 .header_top_nav_enter {
   display: flex;
   align-items: center;
+  margin-left: auto;
+  width: 84px;
   font-size: 18px;
+  outline: none;
+}
+
+.header_top_nav_enter:focus {
+  background-color: #7943A4;
 }
 
 .header_top_nav_enter_link {
   display: flex;
   padding-left: 26px;
   /* padding-right: 6px; */
-  margin-left: 412px;
+  /* margin-left: 412px; */
   color: #fff;
   background-image: url(../img/1_Header/Enter.svg);
   background-position: 9%;
@@ -1540,7 +1547,7 @@ a.to-galery-link {
 }
 
 .catalog_content_accordion .catalog_content_accordion_item {
-  height: auto !important;
+  height: auto;
   padding: 0%;
   border-left: none;
   border-right: none;
