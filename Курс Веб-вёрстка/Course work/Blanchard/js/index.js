@@ -33,6 +33,7 @@ window.addEventListener('DOMContentLoaded', function () {
   let headerTopBurger = document.querySelectorAll('.header_top_burger');
   let headerTopNav = document.querySelectorAll('.header_top_nav');
   let headerTopBurgerClose = document.querySelectorAll('.header_top_nav_close');
+  let headerTopNavLink = document.querySelectorAll('.header_top_nav_list_item_link');
 
   headerTopBurger.forEach(function(burger){
     burger.addEventListener('click', function(clickBurger){
@@ -45,6 +46,13 @@ window.addEventListener('DOMContentLoaded', function () {
     burgerClose.addEventListener('click', function(clickBurgerClose){
       headerTopNav.forEach(function(navClose){
         navClose.classList.toggle('header_top_nav-active');
+      });
+    });
+  });
+  headerTopNavLink.forEach(function(navLink){
+    navLink.addEventListener('click', function(clickLink){
+      headerTopNav.forEach(function(navLinkClose){
+        navLinkClose.classList.toggle('header_top_nav-active');
       });
     });
   });

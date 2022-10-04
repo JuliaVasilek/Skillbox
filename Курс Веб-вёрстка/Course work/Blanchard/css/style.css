@@ -71,6 +71,7 @@ html {
   font-weight: 400;
   font-size: 16px;
   line-height: 32px;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -1789,7 +1790,7 @@ a.to-galery-link {
 //                                        //
 //////////////////////////////////////////*/
 
-.publishment {
+/* .publishment {
   padding: 95px 0 80px;
   background-image: url(/img/6_Publishment/publishment_background.jpg);
   background-repeat: no-repeat;
@@ -1843,7 +1844,7 @@ a.to-galery-link {
   text-align: center;
   font-weight: 700;
   color: #fff;
-}
+} */
 
 /*//////////////////////////////////////////
 //                                        //
