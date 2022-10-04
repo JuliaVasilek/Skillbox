@@ -324,14 +324,17 @@ window.addEventListener('DOMContentLoaded', function () {
     }
     });
 
-    var myPlacemark = new ymaps.Placemark([55.76025106, 37.61447975], {}, {
-      iconLayout: 'default#image',
+    var myPlacemark = new ymaps.Placemark([55.76025106, 37.61447975], {
+      hintContent: 'Леонтьевский переулок, дом 5/1'
+    }, {
+      iconLayout: 'default#imageWithContent',
       iconImageHref: '../img/8_Contacts/Placemark.svg',
       iconImageSize: [20, 20],
-      iconImageOffset: [0, 0]
+      iconImageOffset: [0, 0],
     });
     
     myMap.geoObjects.add(myPlacemark);
+
   }
 
 });

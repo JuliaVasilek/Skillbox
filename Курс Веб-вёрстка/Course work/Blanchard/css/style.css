@@ -1872,7 +1872,7 @@ a.to-galery-link {
 }
 
 .projects_description_tooltip_marker {
-  position: absolute;
+  /* position: absolute; */
   display: flex;
   bottom: -3px;
   width: 16px;
@@ -1895,6 +1895,37 @@ a.to-galery-link {
     color: #fff;
     background-color: #9D5CD0;
   }
+
+.projects_description_tooltip_popup {
+  position: absolute;
+  left: 50%;
+  bottom: 203%;
+  margin-bottom: 1em;
+  width: 70px;
+  height: 20px;
+  background-color: #cbcbcb;
+  border-radius: 3px;
+  opacity: 0;
+  white-space: nowrap;
+  transform: translate(-50%, 1em);
+  transition: all .15s ease-in-out;
+}
+
+.projects_description_tooltip_popup::before {
+  content: '';
+  position: absolute;
+  top: 95%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border: .6em solid transparent;
+  border-top-color: #cbcbcb;
+  transform: translate(-50%,0);
+}
+
+.projects_description_tooltip_marker:hover + .projects_description_tooltip_popup, .projects_description_tooltip_marker:focus+ .projects_description_tooltip_popup {
+  opacity: 1;
+}
 
 /* end / tooltip раздела Проекты */
 
