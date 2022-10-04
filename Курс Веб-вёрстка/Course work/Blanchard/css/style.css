@@ -75,6 +75,9 @@ html {
 
 body {
   background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 h1, h2 {
@@ -103,6 +106,7 @@ input::-webkit-search-results-decoration {
 	height: 15px;
 	background: url(../img/0_Global/Cross-purple.svg);
   background-size: contain;
+  background-repeat: no-repeat;
 	cursor: pointer;
 }
 
@@ -176,6 +180,7 @@ a.to-galery-link {
 
 .header {
   position: relative;
+  width: 100vw;
   font-size: 18px;
 }
 
@@ -381,6 +386,7 @@ a.to-galery-link {
   align-items: center;
   margin-top: -1px;
   height: 71px;
+  width: 100vw;
   background-color: var(--HeaderBottomBackgroundColor);
   font-size: 18px;
   z-index: 3;
@@ -666,6 +672,7 @@ a.to-galery-link {
 
 .hero {
   height: 700px;
+  width: 100vw;
   overflow: hidden;
 }
 
@@ -802,7 +809,7 @@ a.to-galery-link {
   background-image: url(/img/3_Gallery/Background.jpg);
   background-repeat: no-repeat;
   background-position: center -455px;
-  background-size: cover;
+  background-size: 100vw;
 }
 
 .gallery_inner {
@@ -1106,6 +1113,10 @@ a.to-galery-link {
   flex-direction: column-reverse;
 } */
 
+.gallery_paintings_slider {
+  height: auto;
+}
+
 .gallery_paintings_slider_item {
   display: inline-block;
   padding: 25px;
@@ -1261,7 +1272,7 @@ a.to-galery-link {
   position: absolute;
   left: 0;
   right: 0;
-  margin: 25vh auto 0;
+  margin: 10vh auto 0;
   height: 500px;
   width: 900px;
   padding-left: 414px;
@@ -1901,6 +1912,7 @@ a.to-galery-link {
 
 .projects_partners {
   margin-top: 20px;
+  width: 1600px;
 }
 
 .projects_partners_title {
@@ -2192,6 +2204,7 @@ a.to-galery-link {
 #contacts_map {
   width: 1920px;
   height: 700px;
+  margin: 0 auto;
 }
 
 [class*="ground-pane"] {filter: grayscale(1);}
@@ -2204,6 +2217,7 @@ a.to-galery-link {
 
 .footer {
   height: 140px;
+  width: 100vw;
   background-color: #000;
 }
 

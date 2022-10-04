@@ -182,6 +182,7 @@
     width: 290px;
     padding-left: 0;
     padding-top: 200px;
+    margin-top: 23vw;
     background-position: center -79px;
     background-size: auto 60%;
   }
@@ -347,6 +348,7 @@
 
   .projects_partners {
     margin-top: 50px;
+    width: 291px;
   }
 
   .projects_partners_title {

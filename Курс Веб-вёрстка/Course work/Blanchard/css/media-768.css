@@ -56,6 +56,10 @@
   //                                        //
   //////////////////////////////////////////*/
 
+  .gallery {
+    background-size: auto;
+  }
+
   .gallery_inner {
     flex-direction: column;
   }
@@ -93,8 +97,8 @@
   }
 
   .gallery_paintings_slider_item {
-    background-size: 100% auto;
     height: 330px;
+    background-size: 109% auto;
   }
 
   .gallery_popups_item {
@@ -205,6 +209,7 @@
 
   .projects_partners {
     margin-top: 27px;
+    width: 668px;
   }
 
   .projects_partners_title {

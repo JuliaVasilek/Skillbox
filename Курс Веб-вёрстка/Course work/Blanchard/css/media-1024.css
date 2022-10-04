@@ -127,6 +127,7 @@
   .header_top_nav_enter_link {
     background-position: 0%;
     background-size: 18px;
+    margin-left: 0;
   }
 
     .header_top_nav_enter_link:hover, .header_top_nav_enter_link:focus, .header_top_nav_enter_link:active {
@@ -165,7 +166,7 @@
   .hero_content {
     width: 665px;
     top: 107px;
-    margin-left: 42px;
+    margin-left: 5vw;
   }
 
   .hero_content_title {
@@ -220,8 +221,9 @@
   }
 
   .gallery_paintings_slider_item {
+    height: 315px;
     background-position: center -6px;
-    background-size: 280px auto;
+    background-size: auto 350px;
   }
 
   .gallery_popups_item  {
@@ -379,6 +381,10 @@
 
   .projects_description {
     width: auto;
+  }
+
+  .projects_partners {
+    width: 925px;
   }
 
   /*//////////////////////////////////////////
