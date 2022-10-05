@@ -301,10 +301,10 @@ a.to-galery-link {
   align-items: center;
   transition: transform .8s ease;
 }
-
+/* 
 .header_top_search_form-active {
-  /* transform: translateX(-280px); */
-}
+  transform: translateX(-280px);
+} */
 
 .top-search-btn {
   position: absolute;
