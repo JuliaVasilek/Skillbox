@@ -95,6 +95,10 @@ window.addEventListener('DOMContentLoaded', function () {
     // Optional parameters
     direction: 'horizontal',
     loop: true,
+    autoplay: {
+      delay: 6000,
+      disableOnInteraction: false,
+    }
   });
 
   //Gallery - Carousel-------------------------------------

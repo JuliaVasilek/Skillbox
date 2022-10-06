@@ -79,6 +79,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  overflow-x: hidden;
 }
 
 h1, h2 {
@@ -706,15 +707,15 @@ a.to-galery-link {
 }
 
 .hero-slider_item-1 {
-  background-image: url(/img/2_Hero/Slider1.jpg);
+  background-image: url(../img/2_Hero/Slider1.jpg);
 }
 
 .hero-slider_item-2 {
-  background-image: url(/img/2_Hero/Slider2.jpg);
+  background-image: url(../img/2_Hero/Slider2.jpg);
 }
 
 .hero-slider_item-3 {
-  background-image: url(/img/2_Hero/Slider3.jpg);
+  background-image: url(../img/2_Hero/Slider3.jpg);
 }
 
 .hero_content {
@@ -814,7 +815,7 @@ a.to-galery-link {
 
 .gallery {
   /* height: 995px; */
-  background-image: url(/img/3_Gallery/Background.jpg);
+  background-image: url(../img/3_Gallery/Background.jpg);
   background-repeat: no-repeat;
   background-position: center -455px;
   background-size: 100vw;
@@ -922,7 +923,7 @@ a.to-galery-link {
   border: none;
   right: 14px;
   pointer-events: none;
-  background-image: url(/img/0_Global/Arrow.svg);
+  background-image: url(../img/0_Global/Arrow.svg);
   background-repeat: no-repeat;
   transition: transform 0.3s ease;
 }
@@ -1059,7 +1060,7 @@ a.to-galery-link {
   content: '';
   width: 12px;
   height: 12px;
-  background-image: url(/img/0_Global/Arrow.svg);
+  background-image: url(../img/0_Global/Arrow.svg);
   background-repeat: no-repeat;
   background-position: center center;
 }
@@ -1161,27 +1162,27 @@ a.to-galery-link {
   } */
 
 .gallery__item_1 {
-  background-image: url(/img/3_Gallery/1.jpg);
+  background-image: url(../img/3_Gallery/1.jpg);
 }
  
 .gallery__item_2 {
-  background-image: url(/img/3_Gallery/2.jpg);
+  background-image: url(../img/3_Gallery/2.jpg);
 }
  
 .gallery__item_3 {
-  background-image: url(/img/3_Gallery/3.jpg);
+  background-image: url(../img/3_Gallery/3.jpg);
 }
  
 .gallery__item_4 {
-  background-image: url(/img/3_Gallery/4.jpg);
+  background-image: url(../img/3_Gallery/4.jpg);
 }
  
 .gallery__item_5 {
-  background-image: url(/img/3_Gallery/5.jpg);
+  background-image: url(../img/3_Gallery/5.jpg);
 }
  
 .gallery__item_6 {
-  background-image: url(/img/3_Gallery/6.jpg);
+  background-image: url(../img/3_Gallery/6.jpg);
 }
 /*  
 .gallery__item_7 {
@@ -1536,7 +1537,7 @@ a.to-galery-link {
   margin-top: 0;
   height: 50px;
   width: 50px;
-  background-image: url(/img/0_Global/Arrow-black.svg);
+  background-image: url(../img/0_Global/Arrow-black.svg);
   background-position: center 21px;
   background-color: #ECECEC;
   border-radius: 25px;
@@ -1646,7 +1647,7 @@ a.to-galery-link {
   margin-top: 0;
   height: 50px;
   width: 50px;
-  background-image: url(/img/0_Global/Arrow-black.svg);
+  background-image: url(../img/0_Global/Arrow-black.svg);
   background-position: center 21px;
   background-color: #ECECEC;
   background-repeat: no-repeat;
@@ -1684,27 +1685,27 @@ a.to-galery-link {
 }
 
 .events_cards_list_item_1 {
-  background-image: url(/img/5_Events/Event1.jpg);
+  background-image: url(../img/5_Events/Event1.jpg);
   background-position: -7px -1px;
 }
 
 .events_cards_list_item_2 {
-  background-image: url(/img/5_Events/Event2.jpg);
+  background-image: url(../img/5_Events/Event2.jpg);
   background-position: 0 -19px;
 }
 
 .events_cards_list_item_3 {
-  background-image: url(/img/5_Events/Event3.jpg);
+  background-image: url(../img/5_Events/Event3.jpg);
   background-position: -1px -39px;
 }
 
 .events_cards_list_item_4 {
-  background-image: url(/img/5_Events/Event4.jpg);
+  background-image: url(../img/5_Events/Event4.jpg);
   background-position: 0 -225px;
 }
 
 .events_cards_list_item_5 {
-  background-image: url(/img/5_Events/Event5.jpg);
+  background-image: url(../img/5_Events/Event5.jpg);
   background-position: 1px -17px;
 }
 
@@ -1984,7 +1985,7 @@ a.to-galery-link {
   margin-top: 0;
   height: 30px;
   width: 30px;
-  background-image: url(/img/0_Global/Arrow-black.svg);
+  background-image: url(../img/0_Global/Arrow-black.svg);
   background-position: center 13px;
   background-size: 12px;
   background-color: #ECECEC;
