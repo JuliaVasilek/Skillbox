@@ -1,0 +1,47 @@
+@media (max-width: 1023px) {
+
+  html {
+    width: 768px;
+  }
+
+  .container {
+    width: 768px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  /*//////////////////////////////////////////
+  //                                        //
+  //                 Header                 //
+  //                                        //
+  //////////////////////////////////////////*/
+
+  .headerTop__search {
+    transition: background-color .3s ease-in-out;
+  } 
+  
+  .headerTop__search_active {
+    position: absolute;
+    justify-content: end;
+    padding: 50px;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+    z-index: 1;
+  }
+
+  .hiddenSearch__btn_active {
+    transform: translateX(-635px);
+    pointer-events: auto;
+  }
+
+  .hiddenSearch__input {
+    width: 590px;
+  }
+
+
+
+
+
+}

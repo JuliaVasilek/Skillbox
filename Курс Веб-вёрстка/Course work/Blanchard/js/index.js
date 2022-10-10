@@ -30,29 +30,29 @@ window.addEventListener('DOMContentLoaded', function () {
 
   // Header 1024 Top Burger -----------------------------------------
 
-  let headerTopBurger = document.querySelectorAll('.header_top_burger');
-  let headerTopNav = document.querySelectorAll('.header_top_nav');
-  let headerTopBurgerClose = document.querySelectorAll('.header_top_nav_close');
-  let headerTopNavLink = document.querySelectorAll('.header_top_nav_list_item_link');
+  let headerTopBurger = document.querySelectorAll('.headerTop__burger');
+  let headerTopNav = document.querySelectorAll('.headerTop__nav');
+  let headerTopBurgerClose = document.querySelectorAll('.nav__close');
+  let headerTopNavLink = document.querySelectorAll('.nav__link');
 
   headerTopBurger.forEach(function(burger){
     burger.addEventListener('click', function(clickBurger){
       headerTopNav.forEach(function(navOpen){
-        navOpen.classList.toggle('header_top_nav-active');
+        navOpen.classList.toggle('headerTop__nav_active');
       });
     });
   });
   headerTopBurgerClose.forEach(function(burgerClose){
     burgerClose.addEventListener('click', function(clickBurgerClose){
       headerTopNav.forEach(function(navClose){
-        navClose.classList.toggle('header_top_nav-active');
+        navClose.classList.toggle('headerTop__nav_active');
       });
     });
   });
   headerTopNavLink.forEach(function(navLink){
     navLink.addEventListener('click', function(clickLink){
       headerTopNav.forEach(function(navLinkClose){
-        navLinkClose.classList.toggle('header_top_nav-active');
+        navLinkClose.classList.toggle('headerTop__nav_active');
       });
     });
   });
@@ -60,22 +60,22 @@ window.addEventListener('DOMContentLoaded', function () {
 
   // Header 1024 Top Search -----------------------------------------
 
-  let headerTopSearch = document.querySelectorAll('.header_top_search');
-  let headerTopSearchToggle = document.querySelectorAll('.header_top_search_toggle');
-  let headerTopSearchBtn = document.querySelectorAll('.top-search-btn');
-  let headerTopSearchInput = document.querySelectorAll('.top-search-input');
+  let headerTopSearchToggle = document.querySelectorAll('.hiddenSearch__toggle');
+  let headerTopSearch = document.querySelectorAll('.hiddenSearch');
+  let headerTopSearchBtn = document.querySelectorAll('.hiddenSearch__btn');
+  let headerTopSearchInput = document.querySelectorAll('.hiddenSearch__input');
 
   headerTopSearchToggle.forEach(function(toggle){
     toggle.addEventListener('click', function(clickToggle){
       headerTopSearch.forEach(function(search){
-        search.classList.toggle('header_top_search-active');
+        search.classList.toggle('headerTop__search_active');
       });
-      clickToggle.currentTarget.classList.toggle('header_top_search_toggle-active');
+      clickToggle.currentTarget.classList.toggle('hiddenSearch__toggle_active');
       headerTopSearchBtn.forEach(function(searchBtn){
-        searchBtn.classList.toggle('top-search-btn-active');
+        searchBtn.classList.toggle('hiddenSearch__btn_active');
       });
       headerTopSearchInput.forEach(function(searchInput){
-        searchInput.classList.toggle('top-search-input-active');
+        searchInput.classList.toggle('hiddenSearch__input_active');
       });
     });
   });
