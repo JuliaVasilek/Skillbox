@@ -326,7 +326,7 @@
 
   .cardsSwiper__content {
     padding: 53px 33px 34px;
-    height: 483px;
+    min-height: 483px;
   }
 
   .cardsSwiper__caption {
