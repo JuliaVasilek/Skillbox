@@ -25,42 +25,42 @@
   //                                        //
   //////////////////////////////////////////*/
 
-  .header_top {
+  .headerTop {
     height: 45px;
   }
 
-  .header_top_burger {
+  .headerTop__burger {
     width: 25px;
     height: 18px;
     background-size: contain;
     background-image: url(../img/1_Header/media-320/Burger.svg);
   }
 
-  .header_top_logo {
+  .logo {
     width: 97px;
     height: auto;
   }
-
-  .header_top_search-active {
+  
+  .headerTop__search_active {
     padding: 0 22px;
   }
 
-  .top-search-input {
+  .hiddenSearch__input {
     width: auto;
   }
 
-  .top-search-btn {
+  .hiddenSearch__btn {
     right: -28px;
     height: 18px;
     width: 18px;
     background-size: contain;
   }
 
-  .top-search-btn-active {
+  .hiddenSearch__btn_active {
     transform: translateX(-255px);
   }
 
-  .header_top_search_toggle {
+  .hiddenSearch__toggle {
     margin-left: 12px;
     height: 16px;
     width: 16px;
@@ -77,7 +77,7 @@
     height: 310px;
   }
 
-  .hero_content {
+  .hero__content {
     top: 30px;
     left: 0;
     right: 0;
@@ -89,14 +89,14 @@
     text-align: center;
   }
 
-  .hero_content_title {
+  .hero__title {
     margin-bottom: 0;
     font-size: 32px;
     font-weight: 700;
     line-height: 44.58px;
   }
 
-  .hero_content_description {
+  .hero__description {
     margin-top: 0;
     width: 246px;
     font-size: 12px;
@@ -104,14 +104,14 @@
     line-height: 16.34px;
   }
 
-  .hero_content_btn {
+  .hero__btn {
     width: 200px;
     height: 40px;
     margin: 40px auto 6px;
     font-size: 12px;
   }
 
-  .hero_content_btn::before {
+  .hero__btn::before {
     width: 207px;
     height: 45px;
   }
@@ -121,13 +121,13 @@
   //                About Us                //
   //                                        //
   //////////////////////////////////////////*/
-  
-  .aboutUs .head-title {
+
+  .aboutUs__title {
     margin-bottom: 8px;
     line-height: 21px;
   }
 
-  .aboutUs_description {
+  .aboutUs__description {
     width: auto;
     font-size: 14px;
     line-height: 28px;
@@ -139,59 +139,63 @@
   //                                        //
   //////////////////////////////////////////*/
 
+
   .gallery .swiper {
     width: 290px;
   }
 
-  .gallery_info {
+  .gallery__info {
     width: auto;
   }
 
-  .gallery_inner {
+  .gallery__container {
     padding: 57px 0px 49px;
   }
 
-  .gallery_info_title {
+  .gallery__title {
     margin-bottom: 7px;
   }
 
-  .filter_title {
+  .filter__title {
     margin-bottom: 5px;
   }
 
-  .gallery_info_filter, .gallery_info_options {
+  .gallery__filter, .gallery__checkboxOptionsBlock {
     margin-bottom: 30px;
   }
   
-  .gallery_paintings {
+  .gallery__swiper {
     display: flex;
     flex-direction: column-reverse;
   }
 
-  .gallery_paintings_nav {
+  .gallery__nav {
     margin: 20px auto 0;
   }
 
-  .gallery_paintings_slider_item {
+  .gallery__item {
     height: 366px;
     background-size: auto 100%;
     background-position: center 0px;
   }
 
-  .gallery_popups_item {
+  .gallery__popupItem {
+    margin-top: 23vw;
+  }
+
+  .popup {
     width: 290px;
     padding-left: 0;
     padding-top: 200px;
-    margin-top: 23vw;
     background-position: center -79px;
     background-size: auto 60%;
   }
 
-  .gallery_popups_item_info {
+  .popup__info {
     padding: 18px;
   }
 
-  .gallery_popups_item_info_description {
+  .popup__description {
     margin-top: 10px;
   }
 
@@ -201,90 +205,91 @@
   //                                        //
   //////////////////////////////////////////*/
 
-  .catalog_description_top_title {
-    margin-bottom: 7px;
-  }
 
-  .catalog_description_top_title-text {
+  .catalog__title {
+    margin-bottom: 7px;
     margin-top: 4px;
   }
 
-  .catalog_description_text {
+  .catalog__descriptionText {
     display: none;
   }
-
-  .catalog_content {
+  
+  .catalog__content {
     margin-top: 0;
   }
 
-  .catalog_content_artist {
+  .biography {
     padding-top: 181px;
   }
 
-  .catalog_content_artist_info {
+  .biography__info {
     padding-top: 20px;
   }
 
-  .catalog_content_artist_info_description {
+  .biography__description {
     margin-top: 7px;
     width: 98%;
   }
-
+  
   .standard-title {
     font-size: 24px;
   }
   
-  .catalog_content_artist-1 {
+  .catalog__artist_background_1 {
     background-position: 0 -82px;
   }
   
-  .catalog_content_artist-default {
+  .catalog__artist_default {
     background-image: url(../img/4_Catalog/media-320/default.png);
-  }
+    line-height: 21.79px;
 
-  .catalog_content_accordion .catalog_content_accordion_item-inner {
+  }
+  
+
+
+
+
+
+  .accordion .accordion__list {
     max-height: unset;
     padding: 21px 0 19px;
   }
 
-  .catalog_content_accordion .catalog_content_accordion_item-name {
+  .accordion .accordion__name {
     height: 74px;
   }
 
-  .catalog_content_accordion_item-name .ui-icon {
+  .accordion__name .ui-icon {
     height: 30px;
     width: 30px;
     background-position: center 13px;
     background-size: 11px;
   }
 
-  .catalog_content_accordion_item-name_date {
+  .accordion__date {
     font-size: 18px;
     font-weight: 600;
     line-height: 32px;
   }
 
-  .catalog_content_artist-default {
-    line-height: 21.79px;
-  }
-
-  .catalog_content_accordion_item_default_picture {
+  .accordion__picture_default {
     width: 90px;
     height: 130px;
   }
 
-  .default_picture_img {
+  .accordion__img_default {
     top: 6px;
     right: 6px;
     bottom: 6px;
     left: 6px;
   }
 
-  .catalog_content_accordion_item_default_info {
+  .accordion__info_default {
     width: 175px;
   }
 
-  .default_info_description {
+  .accordion__description_default {
     font-size: 16px;
   }
 
@@ -303,30 +308,30 @@
     margin-bottom: 100px;
   }
 
-  .events_title {
+  .events__title {
     margin-top: 4px;
     margin-bottom: 7px;
   }
 
-  .events_cards_list_item_inner {
+  .cardsSwiper__content {
     padding: 60px 22px 34px;
     height: 483px;
   }
 
-  .events_cards_list_item_inner_caption {
+  .cardsSwiper__caption {
     top: 17px;
   }
 
-  .events_cards_list_item_inner_content_text {
+  .cardsSwiper__text {
     margin-top: 3px;
   }
 
-  .events_cards_list_item_inner_content_btn {
+  .cardsSwiper__btn {
     bottom: 50px;
     left: 28px;
   }
 
-  .events_cards-swiper .swiper-pagination {
+  .events__cards .swiper-pagination {
     bottom: -41px;
   }
 
@@ -335,80 +340,79 @@
   //                Projects                //
   //                                        //
   //////////////////////////////////////////*/
-/* 
-  .section.projects {
-    margin-top: -2px;
-  } */
 
-  .projects_title {
+  .projects__title {
     margin-top: -15px;
     margin-bottom: 2px;
     line-height: 34px;
   }
 
-  .projects_partners {
-    margin-top: 50px;
+  .partners {
     width: 291px;
   }
 
-  .projects_partners_title {
+  .projects_partners {
+    margin-top: 50px;
+  }
+
+  .partners__title {
     font-size: 18px;
     margin-bottom: 10px;
   }
 
-  .projects_partners_links {
+  .partners__content {
     padding: 0 47px;
   }
 
-  .projects_partners_links_swiper_btns {
+  .partners__nav {
     top: 17px;
   }
 
-  .projects_partners_links_swiper_btn-item {
-    background-position: center 12px;
+  .partners__navItem {
+    background-position: 6px 9px;
   }
 
-  .projects_partners_links_swiper_conent_item {
+  .partners__item {
     min-width: unset;
     width: 195px;
     height: 65px;
   }
 
-  .projects_partners_links_swiper_conent_item-1 {
+  .partners__item_background_1 {
     background-size: 54%;
   }
 
-  .projects_partners_links_swiper_conent_item-2 {
+  .partners__item_background_2 {
     background-size: 73%;
   }
 
-  .projects_partners_links_swiper_conent_item-3 {
+  .partners__item_background_3 {
     background-size: 60%;
   }
 
-  .projects_partners_links_swiper_conent_item-4 {
+  .partners__item_background_4 {
     background-size: 31%;
     background-position-y: 15px;
   }
 
-  .projects_partners_links_swiper_conent_item-5 {
+  .partners__item_background_5 {
     background-size: 40%;
     background-position-y: 10px;
   }
 
-  .projects_partners_links_swiper_conent_item-6 {
+  .partners__item_background_6 {
     background-size: 60%;
   }
   
-  .projects_partners_links_swiper_conent_item-7 {
+  .partners__item_background_7 {
     background-size: 62%;
   }
 
-  .projects_partners_links_swiper_conent_item-8 {
+  .partners__item_background_8 {
     background-size: 44%;
   }
 
-  .projects_partners_links_swiper_conent_item-9 {
+  .partners__item_background_9 {
     background-size: 56%;
   }
 
@@ -418,77 +422,77 @@
   //                                        //
   //////////////////////////////////////////*/
 
-  .contacts .container {
+  .contacts__container {
     border: none;
   }
 
-  .contacts_content {
+  .contacts__content {
     padding: 0px 0 16px;
     margin-top: -4px;
   }
 
-  .contacts_content_location {
+  .contacts__location {
     margin-bottom: 13px;
   }
 
-  .contacts_content_location_name {
+  .location__name {
     font-size: 18px;
   }
 
-  .contacts_content_location_address {
+  .location__address {
     margin-top: -5px;
     font-size: 14px;
   }
 
-  .getACall_form_fieldset_item {
+  .getACallForm__item {
     width: 290px;
     height: 40px;
   }
 
-  .getACall_form_fieldset_item:not(:last-child) {
+  .getACallForm__item:not(:last-child) {
     margin-bottom: 20px;
   }
 
-  .getACall_form_fieldset_btn {
+  .getACallForm__item_btn {
     width: 125px;
     font-size: 12px;
   }
 
-  .getACall_form_fieldset_btn:before {
+  .getACallForm__item_btn:before {
     top: -8px;
     left: -8px;
     width: 130px;
     height: 44px;
   }
 
-  .getACall_form_fieldset_btn span {
+  .getACallForm__item_btn span {
     display: none;
   }
 
-  .contacts_content_socials {
+  .contacts__socials {
     margin-top: 20px;
   }
 
-  .contacts_content_socials_title {
+  .socials__title {
     font-weight: 400;
     font-size: 18px;
   }
 
-  .contacts_content_socials_links_item {
+  .socials__item {
     width: 50px;
     height: 50px;
     background-size: contain;
   }
 
-  .contacts_content_socials_links_item:not(:last-child) {
+  .socials__item:not(:last-child) {
     margin-right: 15px;
   }
 
-  .contacts_content_socials_links_item:active {
+  .socials__item:active {
     border-radius: 25px;
   }
 
-  #contacts_map {
+  #contacts__map {
     width: 320px;
     height: 320px;
   }
@@ -503,14 +507,14 @@
     height: auto;
   }
 
-  .footer_inner {
+  .footer__container{
     height: unset;
     padding-top: 20px;
     flex-direction: column-reverse;
     justify-content: unset;
   }
 
-  .footer_logo {
+  .footer__logo {
     margin: 20px 0;
     width: 95px;
     height: 22px;
@@ -518,7 +522,7 @@
     background-repeat: no-repeat;
   }
 
-  .footer_social_item {
+  .footerSocials__item {
     width: 50px;
     height: 50px;
   }

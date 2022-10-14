@@ -9,7 +9,7 @@ window.addEventListener('DOMContentLoaded', function () {
 
   //Header Dropdown-----------------------------------
 
-  let headerLink = document.querySelectorAll('.header_bottom_list_item_link');
+  let headerLink = document.querySelectorAll('.dropdownOptionBlock__link');
   // let headerDropdown = document.querySelectorAll('.header_bottom_list_item_dropdown');
 
   headerLink.forEach(function(element){
@@ -17,14 +17,14 @@ window.addEventListener('DOMContentLoaded', function () {
       const path = e.currentTarget.dataset.path;
 
       headerLink.forEach(function(link){
-        link.classList.remove('header_bottom_list_item_link--active');
+        link.classList.remove('dropdownOptionBlock__link_active');
       });
-      e.currentTarget.classList.add('header_bottom_list_item_link--active');
+      e.currentTarget.classList.add('dropdownOptionBlock__link_active');
 
       // headerDropdown.forEach(function(element){
       //   element.classList.remove('header_bottom_list_item_dropdown--active');
       // });
-      document.querySelector(`[data-target="${path}"]`).classList.toggle('header_bottom_list_item_dropdown--active');
+      document.querySelector(`[data-target="${path}"]`).classList.toggle('dropdownOptionBlock__dropdown_active');
     });
   });
 
@@ -91,7 +91,7 @@ window.addEventListener('DOMContentLoaded', function () {
 
   //Swiper (Hero)-------------------------------------
 
-  const swiper1 = new Swiper('.hero-swiper', {
+  const swiper1 = new Swiper('.hero__swiper', {
     // Optional parameters
     direction: 'horizontal',
     loop: true,
@@ -103,7 +103,7 @@ window.addEventListener('DOMContentLoaded', function () {
 
   //Gallery - Carousel-------------------------------------
 
-  const swiper2 = new Swiper('.gallery-swiper', {
+  const swiper2 = new Swiper('.gallery__swiper', {
     // Optional parameters
     direction: 'horizontal',
   
@@ -114,7 +114,7 @@ window.addEventListener('DOMContentLoaded', function () {
     },
 
     pagination: {
-      el: '.gallery_paintings_nav_pag',
+      el: '.gallery__pagination',
       type: 'fraction',
     },
 
@@ -177,24 +177,24 @@ window.addEventListener('DOMContentLoaded', function () {
 
   //Gallery - Popup
 
-  let paintingLink = document.querySelectorAll('.gallery_paintings_slider_item');
-  let popupBlock = document.querySelectorAll('.gallery_popups'); 
-  let closeBtn = document.querySelectorAll('.gallery_popups_item_close');
+  let paintingLink = document.querySelectorAll('.gallery__item');
+  let popupBlock = document.querySelectorAll('.gallery__popups'); 
+  let closeBtn = document.querySelectorAll('.popup__close');
 
   paintingLink.forEach(function(painting){
     painting.addEventListener('click', function(paintingClick){
       const path = paintingClick.currentTarget.dataset.path;
 
       popupBlock.forEach(function(popups){
-        popups.classList.remove('gallery_popups-active');
+        popups.classList.remove('gallery__popups_active');
       });
-      document.querySelector(`[data-target="${path}"]`).classList.add('gallery_popups-active');
+      document.querySelector(`[data-target="${path}"]`).classList.add('gallery__popups_active');
     });
   });
   closeBtn.forEach(function(close){
     close.addEventListener('click', function(closeClick){
       popupBlock.forEach(function(popups){
-        popups.classList.remove('gallery_popups-active');
+        popups.classList.remove('gallery__popups_active');
       });
     });
   });
@@ -204,37 +204,37 @@ window.addEventListener('DOMContentLoaded', function () {
   $( function() {
     $( "#accordion" ).accordion({
       heightStyle: "content",
-      header: ".catalog_content_accordion_item-name"
+      header: ".accordion__name"
     });
   });
 
   //Accordion - Табы ---------------------------------
-  let catalogLink = document.querySelectorAll('.catalog_content_accordion_item_content');
-  let catalogTab = document.querySelectorAll('.catalog_content_artist');
+  let catalogLink = document.querySelectorAll('.accordion__content');
+  let catalogTab = document.querySelectorAll('.catalog__artist');
 
   catalogLink.forEach(function(link){
     link.addEventListener('click', function(linkClick){
       const path = linkClick.currentTarget.dataset.path;
 
       catalogTab.forEach(function(tab){
-        tab.classList.remove('catalog_content_artist-active');
+        tab.classList.remove('catalog__artist_active');
       });
-      document.querySelector(`[data-target="${path}"]`).classList.add('catalog_content_artist-active');
+      document.querySelector(`[data-target="${path}"]`).classList.add('catalog__artist_active');
     });
   });
 
   //Events - Swiper --------------------------
-  const swiper3 = new Swiper('.events_cards-swiper', {
+  const swiper3 = new Swiper('.events__cards', {
 
     direction: 'horizontal',
   
     pagination: {
-      el: '.events_cards-swiper_pagination',
+      el: '.cardsSwiper__pagination',
     },
   
     navigation: {
-      nextEl: '.events_cards-swiper_btns_next',
-      prevEl: '.events_cards-swiper_btns_prev',
+      nextEl: '.cardsSwiper__navItem_next',
+      prevEl: '.cardsSwiper__navItem_prev',
     },
 
     breakpoints: {
@@ -265,13 +265,13 @@ window.addEventListener('DOMContentLoaded', function () {
 
   // Projects - Swiper --------------------
 
-  const swiper4 = new Swiper('.projects_partners_links_swiper', {
+  const swiper4 = new Swiper('.partners__cards', {
 
     direction: 'horizontal',
   
     navigation: {
-      nextEl: '.projects_partners_links_swiper_btn-next',
-      prevEl: '.projects_partners_links_swiper_btn-prev',
+      nextEl: '.partners__navItem_next',
+      prevEl: '.partners__navItem_prev',
     },
 
     breakpoints: {
@@ -305,7 +305,7 @@ window.addEventListener('DOMContentLoaded', function () {
   ymaps.ready(init);
   function init(){
     
-    var myMap = new ymaps.Map("contacts_map", {
+    var myMap = new ymaps.Map("contacts__map", {
       center: [55.76025106, 37.61447975],
       zoom: 14,
       controls: []

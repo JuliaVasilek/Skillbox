@@ -16,47 +16,51 @@
   //                                        //
   //////////////////////////////////////////*/
 
-  .header_top_burger {
+  .headerTop__burger {
     display: inline-block;
   }
-
-  .header_top_logo {
-    position: absolute;
-    margin-left: auto;
-    margin-right: auto;
+  
+  .logo {
     height: 44px;
     width: 186px;
-    left: 0;
-    right: 0;
   }
 
-  .header_top_nav {
+  .headerTop__logo {
     position: absolute;
-    /* display: none; */
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .nav {
     display: flex;
     flex-direction: column;
     justify-content: start;
-    left: 0;
-    top: 0;
     padding: 50px;
     height: 100vh;
     width: 100%;
-    margin: 0;
     font-size: 24px;
     background-color: #000;
+  }
+
+  .headerTop__nav  {
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: 0;
     z-index: 5;
     opacity: 0;
     transition: opacity .2s ease-in-out;
     pointer-events: none;
   }
 
-  .header_top_nav-active {
-    /* display: flex; */
+  .headerTop__nav_active {
     opacity: 1;
     pointer-events: auto;
   }
 
-  .header_top_nav_close {
+  .nav__close {
     display: inline-block;
     height: 29px;
     width: 29px;
@@ -67,24 +71,24 @@
     outline: none;
   }
 
-    .header_top_nav_close:hover {
-      background-image: url(../img/1_Header/media-1024/X-hover.svg);
-    }
+  .nav__close:hover {
+    background-image: url(../img/1_Header/media-1024/X-hover.svg);
+  }
 
-    .header_top_nav_close:focus, .header_top_nav_close:active {
-      background-image: url(../img/1_Header/media-1024/X-active.svg);
-    }
+  .nav__close:focus, .nav__close:active {
+    background-image: url(../img/1_Header/media-1024/X-active.svg);
+  }
 
-  .header_top_nav_list {
+  .nav__list {
     flex-direction: column;
     width: auto;
   }
 
-  .header_top_nav_list_item:not(:last-child) {
+  .nav__item:not(:last-child) {
     margin-bottom: 40px;
   }
 
-  .header_top_nav_enter {
+  .nav__enter {
     position: absolute;
     bottom: 50px;
     display: flex;
@@ -95,63 +99,59 @@
     border: 2px solid #9D5CD0;
     border-radius: 30px;
     outline: none;
+    transition: all .15s ease-in-out;
   }
 
-  .header_top_nav_enter::before {
+  .nav__enter:hover {
+    background-color: #C283F3;
+  }
+
+  .nav__enter:active {
+    background-color: #7943A4;
+    border-color: #D1A9F0;
+  }
+
+  .nav__enter::before {
     content: '';
     position: absolute;
-    display: none;
+    display: inline-block;
     width: 263px;
     height: 66px;
     border: 2px solid #C283F3;
     border-radius: 35px;
+    opacity: 0;
+    transition: opacity .15s ease-in-out;
+  }
+  .nav__enter:focus::before {
+    opacity: 1;
   }
 
-    .header_top_nav_enter:focus::before {
-      display: inline-block;
-    }
+  .nav__enter:active::before {
+    opacity: 0;
+  }
 
-    .header_top_nav_enter:hover {
-      background-color: #C283F3;
-    }
-    
-    .header_top_nav_enter:active {
-      background-color: #7943A4;
-      border-color: #D1A9F0;
-    }
-    
-    .header_top_nav_enter:active::before {
-      display: none;
-    }
-
-  .header_top_nav_enter_link {
+  .nav__enterLink {
     background-position: 0%;
     background-size: 18px;
     margin-left: 0;
   }
 
-    .header_top_nav_enter_link:hover, .header_top_nav_enter_link:focus, .header_top_nav_enter_link:active {
-      color: #fff;
-      background-image: url(../img/1_Header/Enter.svg);
-    }
+  .nav__enterLink:hover, .nav__enterLink:focus, .nav__enterLink:active {
+    color: #fff;
+    background-image: url(../img/1_Header/Enter.svg);
+  }
 
-  .header_top_search {
+  .hiddenSearch {
     display: flex;
   }
 
-  .header_top_search_toggle {
+  .hiddenSearch__toggle {
     margin-left: 9px;
   }
-  
-  .header_bottom {
+
+  .header__bottom {
     display: none;
   }
-
-  /*//////////////////////////////////////////
-  //                                        //
-  //                  Main                  //
-  //                                        //
-  //////////////////////////////////////////*/
 
   /*//////////////////////////////////////////
   //                                        //
@@ -163,26 +163,26 @@
     height: 668px;
   }
 
-  .hero_content {
+  .hero__content {
     width: 665px;
     top: 107px;
     margin-left: 5vw;
   }
 
-  .hero_content_title {
+  .hero__title {
     margin-bottom: 0;
   }
 
-  .hero_content_description {
+  .hero__description {
     width: 100%;
     margin-top: -10px;
   }
 
-  .hero_content_btn {
+  .hero__btn {
     margin-top: 133px;
   }
 
-  .hero-slider_item {
+  .hero__item {
     background-position: center -513px;
   }
 
@@ -192,7 +192,8 @@
   //                                        //
   //////////////////////////////////////////*/
 
-  .aboutUs_description {
+
+  .aboutUs__description {
     width: auto;
   }
 
@@ -202,15 +203,15 @@
   //                                        //
   //////////////////////////////////////////*/
 
-  .gallery_info {
+  .gallery__info {
     min-width: 280px;
   }
 
-  .gallery_info_options {
+  .gallery__checkboxOptionsBlock {
     bottom: 35px;
   }
 
-  .gallery_info_options_item-input + span::before {
+  .checkboxOptionsBlock__input + span::before {
     top: -11px;
     right: -1px;
   }
@@ -220,69 +221,65 @@
     height: 378px;
   }
 
-  .gallery_paintings_slider_item {
+  .gallery__item {
     height: 315px;
     background-position: center -6px;
     background-size: auto 350px;
   }
 
-  .gallery_popups_item  {
+  .popup  {
     width: 594px;
     height: 594px; 
     padding-left: 264px;
     background-position: -114px 0;
   }
-  
+
   /*//////////////////////////////////////////
   //                                        //
   //                Catalog                 //
   //                                        //
   //////////////////////////////////////////*/
 
-  /* .catalog_description_top_title {
-    padding-top: 8px;
-    margin-bottom: 12px;
-  } */
 
-  .catalog_description_top_title-text {
+  .catalog__title {
     margin-top: 9px;
   }
 
-  .catalog_description_text {
+  .catalog__descriptionText {
     width: auto;
   }
 
-  .catalog_content_artist {
+  .biography {
     padding-top: 274px;
     width: 437px;
     background-size: contain;
   }
 
-  .catalog_content_artist-1 {
+  .catalog__artist_background_1 {
     background-position: 0 -124px;
   }
 
-  .catalog_content_accordion {
-    width: 437px;
-  }
-
-  .catalog_content_artist_info {
+  .biography__info {
     padding-top: 32px;
     background-color: #fff;
     margin-left: -1px;
     width: 101%;
   }
 
-  .catalog_content_accordion .catalog_content_accordion_item-inner {
+  .accordion {
+    width: 437px;
+  }
+
+  .accordion .accordion__list {
     max-height: 434px;
   }
 
-  .catalog_content_accordion_item_default_picture {
+  .accordion__picture_default {
     width: 189px;
     height: 130px;
   }
 
-  .catalog_content_accordion_item_default_info {
+  .accordion__info_default {
     width: 207px;
   }
 
@@ -292,70 +289,70 @@
   //                                        //
   //////////////////////////////////////////*/
 
-  .events_cards-swiper_btns {
+  .cardsSwiper__nav {
     display: none;
   }
 
-  .events_cards_list_item {
+  .cardsSwiper__item {
     padding-top: 200px;
   }
 
-  .events_cards_list_item_1 {
+  .cardsSwiper__item_background_1 {
     background-size: 372px 200px;
     background-position: -3px top;
   }
 
-  .events_cards_list_item_2 {
+  .cardsSwiper__item_background_2 {
     background-size: auto 200px;
     background-position: center top;
 
   }
 
-  .events_cards_list_item_3 {
+  .cardsSwiper__item_background_3 {
     background-size: auto 221px;
     background-position: center -10px;
 
   }
 
-  .events_cards_list_item_4 {
+  .cardsSwiper__item_background_4 {
     background-size: auto 439px;
     background-position: center -119px;
   }
 
-  .events_cards_list_item_5 {
+  .cardsSwiper__item_background_5 {
     background-size: auto 200px;
     background-position: center top;
   }
 
-  .events_cards_list_item_inner {
-    padding: 53px 34px 34px;
+  .cardsSwiper__content {
+    padding: 53px 33px 34px;
     height: 483px;
   }
 
-  .events_cards_list_item_inner_caption {
+  .cardsSwiper__caption {
     left: unset;
     right: 34px;
     text-align: right;
     font-weight: 400;
   }
 
-  .events_cards_list_item_inner_content_text {
+  .cardsSwiper__text {
     margin-top: 6px;
   }
 
-  .events_cards_list_item_inner_content_btn {
+  .cardsSwiper__btn {
     bottom: 48px;
   }
 
-  .events_cards-swiper_pagination {
+  .cardsSwiper__pagination {
     display: block;
   }
 
-  .events_cards-swiper .swiper-pagination {
+  .events__cards .swiper-pagination {
     bottom: -50px;
   }
 
-  .events_cards-swiper .swiper-pagination .swiper-pagination-bullet {
+  .events__cards .swiper-pagination .swiper-pagination-bullet {
     margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 8px);
     width: var(--swiper-pagination-bullet-width, var(--swiper-pagination-bullet-size, 10px));
     height: var(--swiper-pagination-bullet-height, var(--swiper-pagination-bullet-size, 10px));
@@ -375,15 +372,15 @@
     margin-bottom: 57px;
   }
 
-  .projects_title {
+  .projects__title {
     margin-top: 48px;
   }
 
-  .projects_description {
+  .projects__description {
     width: auto;
   }
 
-  .projects_partners {
+  .partners {
     width: 925px;
   }
 
@@ -393,32 +390,36 @@
   //                                        //
   //////////////////////////////////////////*/
 
-  .contacts_content {
+  .contacts__content {
     flex-direction: column;
     padding: 44px 0 35px;
   }
 
-  .contacts_content_location {
+  .contacts__location {
     margin-bottom: 23px;
   }
 
-  .contacts_content_location_address {
+  .location__address {
     margin-top: 4px;
   }
 
-  .getACall_form_fieldset {
+  .getACallForm__fieldset {
     width: auto;
   }
 
-  .getACall_form_fieldset_btn {
+  .getACallForm__item_btn {
     width: 339px;
   }
 
-  .contacts_content_socials {
+  .getACallForm__item_btn:before {
+    width: 346px;
+  }
+
+  .contacts__socials {
     margin-top: 30px;
   }
 
-  #contacts_map {
+  #contacts__map {
     width: 1024px;
     height: 700px;
   }
@@ -433,7 +434,7 @@
     height: 144px;
   }
 
-  .footer_social_item {
+  .footerSocials__item {
     width: 60px;
     height: 60px;
     background-size: contain;

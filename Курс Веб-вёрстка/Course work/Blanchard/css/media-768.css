@@ -16,11 +16,11 @@
   //                                        //
   //////////////////////////////////////////*/
 
-  .header_top_search {
+  .headerTop__search {
     transition: background-color .3s ease-in-out;
-  }
-
-  .header_top_search-active {
+  } 
+  
+  .headerTop__search_active {
     position: absolute;
     justify-content: end;
     padding: 50px;
@@ -31,12 +31,12 @@
     z-index: 1;
   }
 
-  .top-search-btn-active {
+  .hiddenSearch__btn_active {
     transform: translateX(-635px);
     pointer-events: auto;
   }
 
-  .top-search-input {
+  .hiddenSearch__input {
     width: 590px;
   }
 
@@ -46,7 +46,7 @@
   //                                        //
   //////////////////////////////////////////*/
 
-  .hero-slider_item {
+  .hero__item {
     background-position: center -333px;
   }
 
@@ -60,11 +60,11 @@
     background-size: auto;
   }
 
-  .gallery_inner {
+  .gallery__container {
     flex-direction: column;
   }
 
-  .gallery_info {
+  .gallery__info {
     width: 279px;
     min-width: unset;
   }
@@ -73,16 +73,19 @@
     background-color: #000;
   }
 
-  .gallery_info_options {
-    position: unset;
+  .checkboxOptionsBlock {
     width: 150px;
   }
 
-  .gallery_info_options_item-input + span::before {
+  .gallery__checkboxOptionsBlock {
+    position: unset;
+  }
+
+  .checkboxOptionsBlock__input + span::before {
     right: 0;
   }
 
-  .gallery_info_filter, .gallery_info_options {
+  .gallery__filter, .gallery__checkboxOptionsBlock {
     margin-bottom: 40px;
   }
 
@@ -92,22 +95,22 @@
     margin-top: 0;
   }
 
-  .gallery_paintings_nav {
+  .gallery__nav {
     margin-bottom: 28px;
   }
 
-  .gallery_paintings_slider_item {
+  .gallery__item {
     height: 330px;
     background-size: 109% auto;
   }
 
-  .gallery_popups_item {
+  .popup {
     padding-left: 301px;
     width: 668px;
     background-position: -94px 0;
   }
 
-  .gallery_popups_item_info {
+  .popup__info {
     padding-right: 41px;
   }
 
@@ -117,45 +120,48 @@
   //                                        //
   //////////////////////////////////////////*/
 
-  .catalog_content {
+  .catalog__content {
     flex-direction: column-reverse;
     margin-top: 21px;
   }
 
-  .catalog_content_accordion {
-    width: auto
-  }
-
-  .catalog_content_accordion .catalog_content_accordion_item-inner {
-    max-height: 338px;
-  }
-
-  .catalog_content_accordion_item_default_picture {
-    width: 275px;
-    height: 189px;
-  }
-
-  .catalog_content_accordion_item_default_info {
-    width: 275px;
-  }
-
-  .catalog_content_artist {
+  .catalog__artist {
     margin-top: 50px;
+  }
+
+  .biography {
     padding-top: 419px;
     width: auto;
     background-size: 100%;
   }
 
-  .catalog_content_artist_info {
+  .biography__info {
     padding-top: 23px;
   }
 
-  .catalog_content_artist_info_description {
+  .biography__description {
     margin-top: -1px;
   }
 
-  .catalog_content_artist-1 {
+  .catalog__artist_background_1 {
     background-position: 0 -186px;
+  }
+
+  .accordion {
+    width: auto
+  }
+
+  .accordion .accordion__list {
+    max-height: 338px;
+  }
+
+  .accordion__picture_default {
+    width: 275px;
+    height: 189px;
+  }
+
+  .accordion__info_default {
+    width: 275px;
   }
 
   /*//////////////////////////////////////////
@@ -164,36 +170,36 @@
   //                                        //
   //////////////////////////////////////////*/
 
-  .events_title {
+  .events__title {
     margin-top: 8px;
   }
 
-  .events_cards_list_item_inner {
+  .cardsSwiper__content {
     padding-top: 49px;
   }
 
-  .events_cards_list_item_inner_caption {
+  .cardsSwiper__caption {
     right: 17px;
     top: 15px;
   }
 
-  .events_cards_list_item_inner_content {
+  .cardsSwiper__info {
     margin-top: 2px;
   }
 
-  .events_cards_list_item_inner_content_btn {
+  .cardsSwiper__btn {
     bottom: 48px;
   }
 
-  .events_cards_list_item_2, .events_cards_list_item_5 {
+  .cardsSwiper__item_background_2, .cardsSwiper__item_background_5 {
     background-size: auto 212px;
   } 
 
-  .events_cards_list_item_3 {
+  .cardsSwiper__item_background_3 {
     background-size: auto 238px;
   }
 
-  .events_cards_list_item_4 {
+  .cardsSwiper__item_background_4 {
     background-size: auto 475px;
   }
 
@@ -207,60 +213,63 @@
     margin-bottom: 81px;
   }
 
-  .projects_partners {
-    margin-top: 27px;
+  .partners {
     width: 668px;
   }
 
-  .projects_partners_title {
+  .projects_partners {
+    margin-top: 27px;
+  }
+
+  .partners__title {
     margin-bottom: 29px;
   }
 
-  .projects_partners_links {
+  .partners__content {
     padding: 0 53px;
   }
 
-  .projects_partners_links_swiper_btns {
+  .partners__nav {
     top: 37px;
   }
 
-  .projects_partners_links_swiper_conent_item {
+  .partners__item {
     min-width: 263px;
     height: 106px;
     background-size: 80%;
   }
 
-  .projects_partners_links_swiper_conent_item-1, .projects_partners_links_swiper_conent_item-2  {
+  .partners__item_background_1, .partners__item_background_2  {
     background-size: 80%;
   }
 
-  .projects_partners_links_swiper_conent_item-3 {
+  .partners__item_background_3 {
     background-size: 77%;
   }
 
-  .projects_partners_links_swiper_conent_item-4 {
+  .partners__item_background_4 {
     background-size: 40%;
     background-position-y: 22px;
   }
 
-  .projects_partners_links_swiper_conent_item-5 {
+  .partners__item_background_5 {
     background-size: 47%;
     background-position-y: 18px;
   }
 
-  .projects_partners_links_swiper_conent_item-6 {
+  .partners__item_background_6 {
     background-size: 70%;
   }
 
-  .projects_partners_links_swiper_conent_item-7 {
+  .partners__item_background_7 {
     background-size: 70%;
   }
 
-  .projects_partners_links_swiper_conent_item-8 {
+  .partners__item_background_8 {
     background-size: 54%;
   }
 
-  .projects_partners_links_swiper_conent_item-9 {
+  .partners__item_background_9 {
     background-size: 74%;
   }
 
@@ -270,23 +279,23 @@
   //                                        //
   //////////////////////////////////////////*/
 
-  .getACall_form_fieldset {
+  .getACallForm__fieldset {
     flex-wrap: wrap;
   }
 
-  .getACall_form_fieldset_item {
+  .getACallForm__item {
     width: 323px;
   }
 
-  .getACall_form_fieldset_item:not(:last-child) {
+  .getACallForm__item:not(:last-child) {
     margin-bottom: 12px;
   }
 
-  .getACall_form_fieldset_btn {
+  .getACallForm__item_btn {
     width: 317px;
   }
 
-  #contacts_map {
+  #contacts__map {
     width: 768px;
   }
 
