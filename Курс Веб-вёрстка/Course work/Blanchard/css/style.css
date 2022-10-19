@@ -1217,11 +1217,14 @@ a.to-galery-link {
 //                                        //
 //////////////////////////////////////////*/
 
+.catalog__container {
+  padding-top: 2px;
+}
 
 .catalog__title {
   display: flex;
   flex-direction: row;
-  margin-bottom: 11px;
+  margin-bottom: 19px;
   margin-top: 10px;
 }
 
@@ -1510,7 +1513,7 @@ a.to-galery-link {
 
 .cardsSwiper__content {
   position: relative;
-  padding: 60px 50px 75px;
+  padding: 60px 49px 75px;
   background-color: #fff;
   width: 100%;
   min-height: 400px;
