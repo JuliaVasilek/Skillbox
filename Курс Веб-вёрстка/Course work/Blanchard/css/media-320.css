@@ -273,23 +273,23 @@
     line-height: 32px;
   }
 
-  .accordion__picture_default {
+  .defaultAccordionBlock__picture {
     width: 90px;
     height: 130px;
   }
 
-  .accordion__img_default {
+  .defaultAccordionBlock__img {
     top: 6px;
     right: 6px;
     bottom: 6px;
     left: 6px;
   }
 
-  .accordion__info_default {
+  .defaultAccordionBlock__info {
     width: 175px;
   }
 
-  .accordion__description_default {
+  .defaultAccordionBlock__description {
     font-size: 16px;
   }
 
