@@ -591,22 +591,22 @@ a.to-galery-link {
   background-position: 0px -116px;
 }
 
-.header-bottom-dropdown-item-background-futurizm-1 {
+.dropdownOptionBlock__item_background_futurizm-1 {
   background-image: url(../img/1_Header/Futurizm/Karra_bgr.jpg);
   background-position: 0px -52px;
 }
 
-.header-bottom-dropdown-item-background-futurizm-2 {
+.dropdownOptionBlock__item_background_futurizm-2 {
   background-image: url(../img/1_Header/Futurizm/Pratella_bgr.jpg);
   background-position: 0px -51px;
 }
 
-.header-bottom-dropdown-item-background-futurizm-3 {
+.dropdownOptionBlock__item_background_futurizm-3 {
   background-image: url(../img/1_Header/Futurizm/Severini_bgr.jpg);
   background-position: 0px -52px;
 }
 
-.header-bottom-dropdown-item-background-futurizm-4 {
+.dropdownOptionBlock__item_background_futurizm-4 {
   background-image: url(../img/1_Header/Futurizm/Balla_bgr.jpg);
   background-position: 0px -62px;
 }
@@ -1103,23 +1103,23 @@ a.to-galery-link {
 .gallery__item_background_1 {
   background-image: url(../img/3_Gallery/1.jpg);
 }
- 
+
 .gallery__item_background_2 {
   background-image: url(../img/3_Gallery/2.jpg);
 }
- 
+
 .gallery__item_background_3 {
   background-image: url(../img/3_Gallery/3.jpg);
 }
- 
+
 .gallery__item_background_4 {
   background-image: url(../img/3_Gallery/4.jpg);
 }
- 
+
 .gallery__item_background_5 {
   background-image: url(../img/3_Gallery/5.jpg);
 }
- 
+
 .gallery__item_background_6 {
   background-image: url(../img/3_Gallery/6.jpg);
 }
@@ -1372,14 +1372,17 @@ a.to-galery-link {
   outline: none;
 }
 
-.accordion__item_default {
+.accordion__defaultItemContent {
   margin-top: 25px;
   margin-bottom: 25px;
+}
+
+.defaultAccordionBlock {
   display: flex;
   flex-direction: row;
 }
 
-.accordion__picture_default {
+.defaultAccordionBlock__picture {
   position: relative;
   display: inline-block;
   margin-right: 24px;
@@ -1388,7 +1391,7 @@ a.to-galery-link {
   border: 2px solid #B7B7B7;
 }
 
-.accordion__img_default {
+.defaultAccordionBlock__img {
   position: absolute;
   top: 12px;
   right: 12px;
@@ -1397,12 +1400,12 @@ a.to-galery-link {
   background-color: #B7B7B7;
 }
 
-.accordion__info_default {
+.defaultAccordionBlock__info {
   width: 275px;
   align-self: center;
 }
 
-.accordion__description_default {
+.defaultAccordionBlock__description {
   line-height: 21.79px;
 }
 
@@ -1660,7 +1663,7 @@ a.to-galery-link {
 
 .projects__link:hover {
   border-bottom: 1px solid #9D5CD0;
-  
+
 }
 
 .projects__link:focus {

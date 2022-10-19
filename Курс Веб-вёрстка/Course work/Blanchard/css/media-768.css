@@ -155,12 +155,12 @@
     max-height: 338px;
   }
 
-  .accordion__picture_default {
+  .defaultAccordionBlock__picture {
     width: 275px;
     height: 189px;
   }
 
-  .accordion__info_default {
+  .defaultAccordionBlock__info {
     width: 275px;
   }
 
