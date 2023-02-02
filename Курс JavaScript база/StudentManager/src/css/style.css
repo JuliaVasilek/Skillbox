@@ -1,0 +1,7 @@
+.col {
+  border: 1px solid grey;
+}
+
+.navItem {
+  cursor: pointer;
+}
